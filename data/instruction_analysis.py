@@ -1,3 +1,6 @@
+# Script to describe the distribution of the skills and objects in the RT-1 dataset.
+
+
 import matplotlib.pyplot as plt
 
 def plot_and_txt_file(dictionary,filename):

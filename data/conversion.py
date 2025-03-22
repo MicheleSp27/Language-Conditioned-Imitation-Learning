@@ -15,8 +15,8 @@ from torchvision.io import read_image
 import torchvision.transforms as transforms
 import sys
 from torchvision.transforms.functional import resized_crop
-sys.path.insert(0,'/user/mspremulli/Language-Conditioned-IL/')
-sys.path.insert(0,'/user/mspremulli/Language-Conditioned-IL/Multi-Task-LFD-Training-Framework')
+sys.path.insert(0,'/user/mspremulli/Language-Conditioned-Imitation-Learning/')
+sys.path.insert(0,'/user/mspremulli/Multi-Task-LFD-Training-Framework/')
 
 from training.multi_task_il.datasets.utils import create_data_aug
 

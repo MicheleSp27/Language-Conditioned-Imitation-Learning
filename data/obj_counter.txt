@@ -1,0 +1,26 @@
+Number of episodes involving bottom drawer: 4662
+Number of episodes involving rxbar blueberry: 3169
+Number of episodes involving water bottle: 4584
+Number of episodes involving brown chip bag: 3481
+Number of episodes involving banana: 2833
+Number of episodes involving coke can: 4437
+Number of episodes involving middle drawer: 4761
+Number of episodes involving 7up can: 3786
+Number of episodes involving rxbar chocolate: 3164
+Number of episodes involving blue plastic bottle: 4848
+Number of episodes involving top drawer: 4992
+Number of episodes involving green jalapeno chip bag: 3402
+Number of episodes involving green rice chip bag: 3366
+Number of episodes involving pepsi can: 4181
+Number of episodes involving green can: 4349
+Number of episodes involving orange: 5336
+Number of episodes involving blue chip bag: 3414
+Number of episodes involving redbull can: 4469
+Number of episodes involving apple: 5060
+Number of episodes involving orange can: 4417
+Number of episodes involving sponge: 3723
+Number of episodes involving left fridge door: 230
+Number of episodes involving right fridge door: 280
+Number of episodes involving paper bowl: 130
+Number of episodes involving white bowl: 125
+Number of episodes involving blue water bottle: 5

@@ -1,0 +1,6 @@
+Number of episodes involving open: 7807
+Number of episodes involving pick: 31061
+Number of episodes involving move: 20259
+Number of episodes involving close: 7118
+Number of episodes involving place: 16679
+Number of episodes involving knock: 4280

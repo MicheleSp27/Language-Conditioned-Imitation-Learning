@@ -1,0 +1,73 @@
+Number of episodes involving open bottom drawer: 2337
+Number of episodes involving pick rxbar blueberry: 1250
+Number of episodes involving move water bottle: 1070
+Number of episodes involving pick brown chip bag: 1626
+Number of episodes involving pick banana: 2833
+Number of episodes involving close bottom drawer: 2325
+Number of episodes involving move rxbar blueberry: 1206
+Number of episodes involving place coke can: 1342
+Number of episodes involving open middle drawer: 2416
+Number of episodes involving pick coke can: 1442
+Number of episodes involving pick 7up can: 1348
+Number of episodes involving close middle drawer: 2345
+Number of episodes involving move rxbar chocolate: 1298
+Number of episodes involving place blue plastic bottle: 1470
+Number of episodes involving open top drawer: 2696
+Number of episodes involving place rxbar chocolate: 639
+Number of episodes involving place green jalapeno chip bag: 784
+Number of episodes involving pick green rice chip bag: 1334
+Number of episodes involving knock pepsi can: 462
+Number of episodes involving move green rice chip bag: 1312
+Number of episodes involving pick green can: 1449
+Number of episodes involving move orange: 1415
+Number of episodes involving pick rxbar chocolate: 1227
+Number of episodes involving pick blue plastic bottle: 1626
+Number of episodes involving pick blue chip bag: 1499
+Number of episodes involving move redbull can: 1092
+Number of episodes involving place green can: 1270
+Number of episodes involving place blue chip bag: 686
+Number of episodes involving pick apple: 3065
+Number of episodes involving pick orange can: 1623
+Number of episodes involving place apple: 732
+Number of episodes involving move blue chip bag: 1229
+Number of episodes involving move coke can: 1078
+Number of episodes involving move apple: 1263
+Number of episodes involving pick sponge: 1429
+Number of episodes involving pick water bottle: 1693
+Number of episodes involving pick orange: 3144
+Number of episodes involving place water bottle: 1334
+Number of episodes involving move sponge: 1460
+Number of episodes involving knock redbull can: 603
+Number of episodes involving move orange can: 995
+Number of episodes involving place pepsi can: 1169
+Number of episodes involving move blue plastic bottle: 1147
+Number of episodes involving move green jalapeno chip bag: 1123
+Number of episodes involving place orange: 777
+Number of episodes involving knock coke can: 575
+Number of episodes involving place 7up can: 1050
+Number of episodes involving knock 7up can: 464
+Number of episodes involving move pepsi can: 992
+Number of episodes involving move 7up can: 924
+Number of episodes involving place redbull can: 1359
+Number of episodes involving close top drawer: 2296
+Number of episodes involving pick redbull can: 1415
+Number of episodes involving place orange can: 1296
+Number of episodes involving pick green jalapeno chip bag: 1495
+Number of episodes involving move brown chip bag: 1351
+Number of episodes involving place green rice chip bag: 720
+Number of episodes involving knock orange can: 503
+Number of episodes involving knock water bottle: 487
+Number of episodes involving place sponge: 834
+Number of episodes involving pick pepsi can: 1558
+Number of episodes involving knock blue plastic bottle: 605
+Number of episodes involving move green can: 1049
+Number of episodes involving place rxbar blueberry: 713
+Number of episodes involving open left fridge door: 174
+Number of episodes involving open right fridge door: 184
+Number of episodes involving close right fridge door: 96
+Number of episodes involving knock green can: 581
+Number of episodes involving move paper bowl: 130
+Number of episodes involving place brown chip bag: 504
+Number of episodes involving move white bowl: 125
+Number of episodes involving close left fridge door: 56
+Number of episodes involving pick blue water bottle: 5
