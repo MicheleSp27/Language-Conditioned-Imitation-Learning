@@ -1,0 +1,15 @@
+---
+
+  rt1_dataset:
+    _target_ : dataset.CustomDataset
+    data_path : "/mnt/localstorage/mspremulli/RT-1_Converted_Dataset/"
+    time_sequence_length : 6
+    original_dataset : True
+    discard_length : -1
+
+  ur5e_real_dataset:
+    _target_ : dataset.CustomDataset
+    data_path : "/user/frosa/multi_task_lfd/ur_multitask_dataset/pick_place/ur5e_pick_place/"
+    time_sequence_length : 6
+    original_dataset : False
+    discard_length : 12
