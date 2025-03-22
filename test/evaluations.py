@@ -1,5 +1,5 @@
 import sys
-sys.path.insert(0,'/user/mspremulli/Language-Conditioned-IL/')
+sys.path.insert(0,'/user/mspremulli/Language-Conditioned-Imitation-Learning/')
 
 import hydra
 import os
