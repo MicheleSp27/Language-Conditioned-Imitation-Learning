@@ -1,6 +1,9 @@
 """
 Evaluate each task for the same number of --eval_each_task times. 
 """
+import sys
+sys.path.insert(0,'/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/')
+from model.transformer_network import TransformerNetwork
 import warnings
 import cv2
 import random
@@ -27,6 +30,7 @@ from multi_task_test.utils import *
 from multi_task_test import *
 import re
 from colorama import Back
+
 
 
 def seed_everything(seed=42):
@@ -469,13 +473,17 @@ if __name__ == '__main__':
         config = OmegaConf.load(config_path)
         print('Multi-task dataset, tasks used: ', config.tasks)
 
-        model = hydra.utils.instantiate(config.policy)
+        # model = hydra.utils.instantiate(config.policy)
+        
+        # Istantiate the model without hydra
+        params_dict = {"image_channels" : 3, "image_height" : 200, "image_width" : 200, "image_space_low" : 0.0, "image_space_high" : 1.0, "world_vector_space_shape" : 3, "world_vector_space_low" : -1.0, "world_vector_space_high" : 1.0, "rotation_delta_space_shape" : 3, "rotation_delta_space_low" : -6.28, "rotation_delta_space_high" : 6.28, "gripper_closedness_space_shape" : 2}
+        model = TransformerNetwork(use_original_robotic_platform = False, train_step_counter = 0, vocab_size = 256, token_embedding_size = 512, num_layers = 1, layer_size = 4096, num_heads = 8, feed_forward_size = 512, dropout_rate = 0.1, time_sequence_length = 6, crop_size = 256, use_token_learner = True, return_attention_scores = False, params_dict = params_dict   )
 
         if args.wandb_log:
             model_name = model_path.split("/")[-2]
-            wandb.login(key='1d9590e10967b8af6602ddae665dbcc77f88fbd5')
+            wandb.login(key='8d1772ca6d45b179baa5d32928b5ff70f6d004e6')
             run = wandb.init(
-                entity="francescorosa97",
+                entity="m-spremulli1-universit-degli-studi-di-salerno",
                 project=args.project_name,
                 job_type='test',
                 reinit=True)
