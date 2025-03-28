@@ -1,0 +1,15 @@
+setup.py
+multi_task_test/__init__.py
+multi_task_test/block_stack.py
+multi_task_test/button_press.py
+multi_task_test/nut_assembly.py
+multi_task_test/pick_place.py
+multi_task_test/primitive.py
+multi_task_test/test_any_task.py
+multi_task_test/test_one_model.py
+multi_task_test/test_real_world_dataset.py
+multi_task_test/utils.py
+multi_task_test.egg-info/PKG-INFO
+multi_task_test.egg-info/SOURCES.txt
+multi_task_test.egg-info/dependency_links.txt
+multi_task_test.egg-info/top_level.txt

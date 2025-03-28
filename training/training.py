@@ -3,7 +3,7 @@ import hydra
 import sys
 import wandb
 
-sys.path.insert(0,'/user/mspremulli/Language-Conditioned-IL/')
+sys.path.insert(0,'/user/mspremulli/Language-Conditioned-Imitation-Learning/')
 
 from model.transformer_network import TransformerNetwork
 from model.utils import batched_space_sampler,np_to_tensor
