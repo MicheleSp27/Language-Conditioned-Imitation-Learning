@@ -1,8 +1,8 @@
 ---
 
  evaluations_parameters:
-  data_path : "/mnt/localstorage/mspremulli/Simulated_Converted_Delta/"
-  checkpoint_path : "/user/mspremulli/Language-Conditioned-IL/rt-1_simulated_checkpoints_no_pretraining/rt-1_pretraining_simulated_checkpoint_epoch_65_loss_0.008187112072988612_batch_32"
+  data_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta"
+  checkpoint_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt-1_simulated_checkpoints_no_pretraining/rt-1_pretraining_simulated_checkpoint_epoch_70_loss_0.008736225019648103_batch_32"
   number_of_trajectories : 10 
 
  Original : False

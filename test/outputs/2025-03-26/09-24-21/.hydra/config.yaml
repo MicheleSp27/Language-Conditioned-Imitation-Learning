@@ -1,0 +1,63 @@
+evaluations_parameters:
+  data_path: /mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta
+  checkpoint_path: /mnt/localstorage/mspremulli/Model_Checkpoints/rt-1_simulated_checkpoints_no_pretraining/rt-1_pretraining_simulated_checkpoint_epoch_70_loss_0.008736225019648103_batch_32
+  number_of_trajectories: 10
+Original: false
+Transformer_Original:
+  _target_: evaluations.TransformerNetwork
+  use_original_robotic_platform: true
+  train_step_counter: 0
+  vocab_size: 256
+  token_embedding_size: 512
+  num_layers: 1
+  layer_size: 4096
+  num_heads: 8
+  feed_forward_size: 512
+  dropout_rate: 0.1
+  time_sequence_length: 6
+  crop_size: 256
+  use_token_learner: true
+  return_attention_scores: false
+  params_dict:
+    image_channels: 3
+    image_height: 200
+    image_width: 200
+    image_space_low: 0.0
+    image_space_high: 1.0
+    world_vector_space_shape: 3
+    world_vector_space_low: -1.0
+    world_vector_space_high: 1.0
+    rotation_delta_space_shape: 3
+    rotation_delta_space_low: -3.14
+    rotation_delta_space_high: 3.14
+    gripper_closedness_space_shape: 1
+    gripper_closedness_space_low: -1.0
+    gripper_closedness_space_high: 1.0
+Transformer_MIVIA:
+  _target_: evaluations.TransformerNetwork
+  use_original_robotic_platform: false
+  train_step_counter: 0
+  vocab_size: 256
+  token_embedding_size: 512
+  num_layers: 1
+  layer_size: 4096
+  num_heads: 8
+  feed_forward_size: 512
+  dropout_rate: 0.1
+  time_sequence_length: 6
+  crop_size: 256
+  use_token_learner: true
+  return_attention_scores: false
+  params_dict:
+    image_channels: 3
+    image_height: 200
+    image_width: 200
+    image_space_low: 0.0
+    image_space_high: 1.0
+    world_vector_space_shape: 3
+    world_vector_space_low: -1.0
+    world_vector_space_high: 1.0
+    rotation_delta_space_shape: 3
+    rotation_delta_space_low: -6.28
+    rotation_delta_space_high: 6.28
+    gripper_closedness_space_shape: 2

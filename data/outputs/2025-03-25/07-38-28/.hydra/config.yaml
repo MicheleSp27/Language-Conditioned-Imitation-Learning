@@ -1,0 +1,8 @@
+conversion_parameters:
+  data_path: /mnt/localstorage/mspremulli/Datasets/sim_ur5e_pick_place_shifted_converted_delta/
+  save_path: /mnt/localstorage/mspremulli/Simulated_Converted_Delta/
+  resize: true
+  convert_original: false
+  simulated: true
+  image_height: 200
+  image_width: 200

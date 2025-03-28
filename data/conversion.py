@@ -170,6 +170,8 @@ def dataset_conversion(config):
                     #Test Action. Ask to Francesco which action to use
                     
                     action_vector = data["action"]
+                    print(action_vector)
+                    print(saj)
                     # print("Current Action Timestep {} : {}".format(i,action_vector))
 
                     """"
