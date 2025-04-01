@@ -1,0 +1,120 @@
+wandb_version: 1
+
+_wandb:
+  desc: null
+  value:
+    python_version: 3.9.17
+    cli_version: 0.15.10
+    framework: torch
+    is_jupyter_run: false
+    is_kaggle_kernel: false
+    start_time: 1743505457.764169
+    t:
+      1:
+      - 1
+      - 41
+      - 50
+      - 55
+      2:
+      - 1
+      - 41
+      - 50
+      - 55
+      3:
+      - 17
+      - 23
+      - 37
+      4: 3.9.17
+      5: 0.15.10
+      8:
+      - 5
+model:
+  desc: null
+  value: /user/frosa/RT-1-Checkpoint/rt-1_pretraining_simulated-Batch32
+wandb_log:
+  desc: null
+  value: true
+project_name:
+  desc: null
+  value: rt-1_pretraining_simulated
+config:
+  desc: null
+  value: ''
+N:
+  desc: null
+  value: -1
+use_h:
+  desc: null
+  value: -1
+use_w:
+  desc: null
+  value: -1
+num_workers:
+  desc: null
+  value: 1
+obj_detector_path:
+  desc: null
+  value: /user/frosa/multi_task_lfd/checkpoint_save_folder/1Task-Pick-Place-Cond-Target-Obj-Detector-separate-demo-agent-Batch80/
+obj_detector_step:
+  desc: null
+  value: 64152
+size:
+  desc: null
+  value: false
+shape:
+  desc: null
+  value: false
+color:
+  desc: null
+  value: false
+env:
+  desc: null
+  value: pick_place
+eval_each_task:
+  desc: null
+  value: 10
+eval_subsets:
+  desc: null
+  value: 0
+saved_step:
+  desc: null
+  value: 1
+baseline:
+  desc: null
+  value: null
+debug:
+  desc: null
+  value: true
+results_name:
+  desc: null
+  value: null
+variation:
+  desc: null
+  value: null
+seed:
+  desc: null
+  value: null
+controller_path:
+  desc: null
+  value: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/tasks/multi_task_robosuite_env/controllers/config/osc_pose.json
+gpu_id:
+  desc: null
+  value: 1
+save_path:
+  desc: null
+  value: /user/frosa/RT-1-Checkpoint/rt-1_pretraining_simulated-Batch32/results_pick_place/run_1
+test_gt:
+  desc: null
+  value: false
+save_files:
+  desc: null
+  value: true
+gt_bb:
+  desc: null
+  value: false
+sub_action:
+  desc: null
+  value: false
+gt_action:
+  desc: null
+  value: 4

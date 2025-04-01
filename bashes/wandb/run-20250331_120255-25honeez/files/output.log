@@ -1,0 +1,18 @@
+
+Found 4 GPU devices, using 20 parallel workers for evaluating 160 total trajectories
+Renderer is using size (200, 360)
+---- Testing model test_any_task.TransformerNetwork ----
+Traceback (most recent call last):
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 627, in <module>
+    task_success_flags = p.starmap(f, seeds)
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/multiprocessing/pool.py", line 372, in starmap
+    return self._map_async(func, iterable, starmapstar, chunksize).get()
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/multiprocessing/pool.py", line 765, in get
+    self.wait(timeout)
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/multiprocessing/pool.py", line 762, in wait
+    self._event.wait(timeout)
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/threading.py", line 581, in wait
+    signaled = self._cond.wait(timeout)
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/threading.py", line 312, in wait
+    waiter.acquire()
+KeyboardInterrupt

@@ -390,7 +390,7 @@ if __name__ == '__main__':
 
     if args.debug:
         import debugpy
-        debugpy.listen(('0.0.0.0', 5678))
+        debugpy.listen(('0.0.0.0', 5680))
         print("Waiting for debugger attach")
         debugpy.wait_for_client()
 
@@ -473,11 +473,11 @@ if __name__ == '__main__':
         config = OmegaConf.load(config_path)
         print('Multi-task dataset, tasks used: ', config.tasks)
 
-        # model = hydra.utils.instantiate(config.policy)
+        model = hydra.utils.instantiate(config.policy)
         
         # Istantiate the model without hydra
-        params_dict = {"image_channels" : 3, "image_height" : 200, "image_width" : 200, "image_space_low" : 0.0, "image_space_high" : 1.0, "world_vector_space_shape" : 3, "world_vector_space_low" : -1.0, "world_vector_space_high" : 1.0, "rotation_delta_space_shape" : 3, "rotation_delta_space_low" : -6.28, "rotation_delta_space_high" : 6.28, "gripper_closedness_space_shape" : 2}
-        model = TransformerNetwork(use_original_robotic_platform = False, train_step_counter = 0, vocab_size = 256, token_embedding_size = 512, num_layers = 1, layer_size = 4096, num_heads = 8, feed_forward_size = 512, dropout_rate = 0.1, time_sequence_length = 6, crop_size = 256, use_token_learner = True, return_attention_scores = False, params_dict = params_dict   )
+        # params_dict = {"image_channels" : 3, "image_height" : 200, "image_width" : 200, "image_space_low" : 0.0, "image_space_high" : 1.0, "world_vector_space_shape" : 3, "world_vector_space_low" : -1.0, "world_vector_space_high" : 1.0, "rotation_delta_space_shape" : 3, "rotation_delta_space_low" : -6.28, "rotation_delta_space_high" : 6.28, "gripper_closedness_space_shape" : 2}
+        # model = TransformerNetwork(use_original_robotic_platform = False, train_step_counter = 0, vocab_size = 256, token_embedding_size = 512, num_layers = 1, layer_size = 4096, num_heads = 8, feed_forward_size = 512, dropout_rate = 0.1, time_sequence_length = 6, crop_size = 256, use_token_learner = True, return_attention_scores = False, params_dict = params_dict   )
 
         if args.wandb_log:
             model_name = model_path.split("/")[-2]
@@ -545,7 +545,10 @@ if __name__ == '__main__':
                 first_order=config['policy']['first_order'],
                 allow_unused=True)
         else:
-            model.load_state_dict(loaded)
+            # Added by me
+            # Loaded is a dictionary that contain other than the model_state_dict also the optimizer state dict
+            state_dict = loaded['model_state_dict']
+            model.load_state_dict(state_dict)
 
         if not args.gt_bb and getattr(model, "_object_detector", None) is None and config.get('concat_bb', False):
             try:

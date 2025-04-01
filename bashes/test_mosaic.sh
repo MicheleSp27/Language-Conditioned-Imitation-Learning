@@ -13,7 +13,7 @@ export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/lib/nvidia
 
 echo $1
 TASK_NAME="$1"
-NUM_WORKERS=20
+NUM_WORKERS=1
 GPU_ID=1
 
 BASE_PATH=/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning

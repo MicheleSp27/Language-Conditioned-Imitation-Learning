@@ -1,0 +1,31 @@
+Found 4 GPU devices, using 1 parallel workers for evaluating 160 total trajectories
+Renderer is using size (200, 360)
+---- Testing model test_any_task.TransformerNetwork ----
+Model GPU id 1
+Seed: 2746317213
+GPU-ID 2
+Traceback (most recent call last):
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <module>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <listcomp>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 265, in _proc
+    return_rollout = rollout_imitation(model,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 169, in rollout_imitation
+    env, context, variation_id, expert_traj, gt_env = build_env_context(img_formatter,
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/test/multi_task_test/utils.py", line 1905, in build_env_context
+    teacher_expert_rollout = env_fn(teacher_name,
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/tasks/multi_task_robosuite_env/controllers/controllers/expert_pick_place.py", line 281, in get_expert_trajectory
+    if task is not None:
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/tasks/multi_task_robosuite_env/controllers/controllers/expert_pick_place.py", line 281, in get_expert_trajectory
+    if task is not None:
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 701, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1395, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1344, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt

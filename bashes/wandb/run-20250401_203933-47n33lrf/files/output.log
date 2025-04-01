@@ -1,0 +1,21 @@
+Found 4 GPU devices, using 1 parallel workers for evaluating 160 total trajectories
+Renderer is using size (200, 360)
+---- Testing model test_any_task.TransformerNetwork ----
+Model GPU id 1
+Seed: 2746317213
+Traceback (most recent call last):
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <module>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <listcomp>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 265, in _proc
+    return_rollout = rollout_imitation(model,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 169, in rollout_imitation
+    env, context, variation_id, expert_traj, gt_env = build_env_context(img_formatter,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/utils.py", line 1573, in build_env_context
+    teacher_expert_rollout = env_fn(teacher_name,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/tasks/multi_task_robosuite_env/controllers/controllers/expert_pick_place.py", line 257, in get_expert_trajectory
+    visible_ids = os.environ['CUDA_VISIBLE_DEVICES'].split(',')
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lc/lib/python3.9/os.py", line 679, in __getitem__
+    raise KeyError(key) from None
+KeyError: 'CUDA_VISIBLE_DEVICES'

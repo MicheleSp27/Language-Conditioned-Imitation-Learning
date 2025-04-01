@@ -1,0 +1,40 @@
+Found 4 GPU devices, using 1 parallel workers for evaluating 160 total trajectories
+Renderer is using size (200, 360)
+---- Testing model test_any_task.TransformerNetwork ----
+Model GPU id 1
+Seed: 2746317213
+GPU-ID 2
+Panda_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+Target object greenbox
+GPU-ID 2
+UR5e_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+GPU-ID 2
+UR5e_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+Model name test_any_task.TransformerNetwork
+Max-t 95
+Traceback (most recent call last):
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <module>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <listcomp>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 265, in _proc
+    return_rollout = rollout_imitation(model,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 187, in rollout_imitation
+    traj, info = eval_fn(model,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/pick_place.py", line 677, in pick_place_eval
+    return pick_place_eval_demo_cond(model=model,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/pick_place.py", line 312, in pick_place_eval_demo_cond
+    obs, reward, info, action, env_done, time_action = task_run_action(
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/utils.py", line 1748, in task_run_action
+    action, target_pred, target_obj_emb, activation_map, prediction_internal_obj, predicted_bb = get_action(
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/utils.py", line 464, in get_action
+    out = model(states=s_t,
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lc/lib/python3.9/site-packages/torch/nn/modules/module.py", line 1194, in _call_impl
+    return forward_call(*input, **kwargs)
+TypeError: forward() got an unexpected keyword argument 'states'

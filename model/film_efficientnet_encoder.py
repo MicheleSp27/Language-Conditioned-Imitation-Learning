@@ -384,9 +384,9 @@ def maybe_restore_with_film(*args, weights='imagenet', include_top=True, include
     # Load weights.
     if weights == 'imagenet':
         if include_top:
-            weights_path = "/user/mspremulli/Language-Conditioned-IL/model/efficientnet_checkpoints/efficientnetb3.pth"
+            weights_path = "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/model/efficientnet_checkpoints/efficientnetb3.pth"
         else:
-            weights_path = "/user/mspremulli/Language-Conditioned-IL/model/efficientnet_checkpoints/efficientnetb3_notop.pth"
+            weights_path = "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/model/efficientnet_checkpoints/efficientnetb3_notop.pth"
         # This EfficientNet differs from the official pytorch implementation only in parameter names.
         # So we load the pytorch weights in using this function.
         n1 = load_official_pytorch_param(n1, weights_path)

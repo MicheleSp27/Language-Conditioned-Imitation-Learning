@@ -1,0 +1,19 @@
+
+Found 4 GPU devices, using 20 parallel workers for evaluating 160 total trajectories
+Renderer is using size (200, 360)
+Traceback (most recent call last):
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 550, in <module>
+    state_dict = loaded['model_state_dict']
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 550, in <module>
+    state_dict = loaded['model_state_dict']
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1676, in _pydevd_bundle.pydevd_cython.TopLevelThreadTracerNoBackFrame.trace_dispatch_and_unhandled_exceptions
+  File "_pydevd_bundle/pydevd_cython.pyx", line 701, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1152, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1135, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt

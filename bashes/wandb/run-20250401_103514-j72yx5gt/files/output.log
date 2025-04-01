@@ -1,0 +1,36 @@
+Found 4 GPU devices, using 1 parallel workers for evaluating 160 total trajectories
+Renderer is using size (200, 360)
+---- Testing model test_any_task.TransformerNetwork ----
+Model GPU id 1
+Seed: 2746317213
+GPU-ID 2
+Panda_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+Target object greenbox
+GPU-ID 2
+UR5e_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+GPU-ID 2
+UR5e_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+Model name test_any_task.TransformerNetwork
+Max-t 95
+Traceback (most recent call last):
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <module>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <listcomp>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 265, in _proc
+    return_rollout = rollout_imitation(model,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 187, in rollout_imitation
+    traj, info = eval_fn(model,
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/test/multi_task_test/pick_place.py", line 707, in pick_place_eval
+    return pick_place_eval_demo_cond(model=model,
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/test/multi_task_test/pick_place.py", line 235, in pick_place_eval_demo_cond
+    startup_env(model=model,
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/test/multi_task_test/utils.py", line 2096, in task_run_action
+    action, target_pred, target_obj_emb, activation_map, prediction_internal_obj, predicted_bb = get_action(
+TypeError: get_action() got an unexpected keyword argument 'controller'

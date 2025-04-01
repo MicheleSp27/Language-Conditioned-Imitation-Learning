@@ -1,0 +1,267 @@
+2025-04-01 20:39:33,077 INFO    StreamThr :4158177 [internal.py:wandb_internal():86] W&B internal server running at pid: 4158177, started at: 2025-04-01 20:39:33.075678
+2025-04-01 20:39:33,084 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status
+2025-04-01 20:39:33,103 INFO    WriterThread:4158177 [datastore.py:open_for_write():85] open: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/run-47n33lrf.wandb
+2025-04-01 20:39:33,104 DEBUG   SenderThread:4158177 [sender.py:send():379] send: header
+2025-04-01 20:39:33,142 DEBUG   SenderThread:4158177 [sender.py:send():379] send: run
+2025-04-01 20:39:33,689 INFO    SenderThread:4158177 [dir_watcher.py:__init__():211] watching files in: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files
+2025-04-01 20:39:33,689 INFO    SenderThread:4158177 [sender.py:_start_run_threads():1121] run started: 47n33lrf with start time 1743532773.078297
+2025-04-01 20:39:33,722 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: check_version
+2025-04-01 20:39:33,723 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: check_version
+2025-04-01 20:39:33,924 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: run_start
+2025-04-01 20:39:33,946 DEBUG   HandlerThread:4158177 [system_info.py:__init__():32] System info init
+2025-04-01 20:39:33,946 DEBUG   HandlerThread:4158177 [system_info.py:__init__():47] System info init done
+2025-04-01 20:39:33,946 INFO    HandlerThread:4158177 [system_monitor.py:start():181] Starting system monitor
+2025-04-01 20:39:33,948 INFO    HandlerThread:4158177 [system_monitor.py:probe():201] Collecting system info
+2025-04-01 20:39:33,948 INFO    SystemMonitor:4158177 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2025-04-01 20:39:33,950 INFO    SystemMonitor:4158177 [interfaces.py:start():190] Started cpu monitoring
+2025-04-01 20:39:33,952 INFO    SystemMonitor:4158177 [interfaces.py:start():190] Started disk monitoring
+2025-04-01 20:39:33,954 INFO    SystemMonitor:4158177 [interfaces.py:start():190] Started gpu monitoring
+2025-04-01 20:39:33,959 INFO    SystemMonitor:4158177 [interfaces.py:start():190] Started memory monitoring
+2025-04-01 20:39:33,962 INFO    SystemMonitor:4158177 [interfaces.py:start():190] Started network monitoring
+2025-04-01 20:39:34,054 DEBUG   HandlerThread:4158177 [system_info.py:probe():196] Probing system
+2025-04-01 20:39:34,068 DEBUG   HandlerThread:4158177 [system_info.py:_probe_git():181] Probing git
+2025-04-01 20:39:34,097 DEBUG   HandlerThread:4158177 [system_info.py:_probe_git():189] Probing git done
+2025-04-01 20:39:34,098 DEBUG   HandlerThread:4158177 [system_info.py:probe():244] Probing system done
+2025-04-01 20:39:34,098 DEBUG   HandlerThread:4158177 [system_monitor.py:probe():210] {'os': 'Linux-5.15.0-125-generic-x86_64-with-glibc2.35', 'python': '3.9.17', 'heartbeatAt': '2025-04-01T18:39:34.054306', 'startedAt': '2025-04-01T18:39:33.047653', 'docker': None, 'cuda': None, 'args': ('/user/frosa/RT-1-Checkpoint/rt-1_pretraining_simulated-Batch32', '--env', 'pick_place', '--debug', '--saved_step', '1', '--eval_each_task', '10', '--num_workers', '1', '--project_name', 'rt-1_pretraining_simulated', '--controller_path', '/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/tasks/multi_task_robosuite_env/controllers/config/osc_pose.json', '--gpu_id', '1', '--wandb_log', '--save_path', '/user/frosa/RT-1-Checkpoint/rt-1_pretraining_simulated-Batch32/results_pick_place/run_1', '--save_files'), 'state': 'running', 'program': '/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py', 'codePathLocal': None, 'codePath': 'test/multi_task_test/test_any_task.py', 'git': {'remote': 'https://github.com/MicheleSp27/Language-Conditioned-Imitation-Learning.git', 'commit': 'c7638acd48bddd19f29341006843c652739aa794'}, 'email': 'm.spremulli1@studenti.unisa.it', 'root': '/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning', 'host': 'diem-dgx1-v100', 'username': 'frosa_Loc', 'executable': '/raid/home/frosa_Loc/conda/envs/multi_task_lc/bin/python', 'cpu_count': 20, 'cpu_count_logical': 40, 'cpu_freq': {'current': 1632.367925, 'min': 1200.0, 'max': 3600.0}, 'cpu_freq_per_core': [{'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1524.075, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2244.178, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}, {'current': 3600.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 2300.0, 'min': 1200.0, 'max': 3600.0}, {'current': 1200.0, 'min': 1200.0, 'max': 3600.0}], 'disk': {'/': {'total': 1758.88041305542, 'used': 1567.407138824463}}, 'gpu': 'Tesla V100-DGXS-32GB', 'gpu_count': 4, 'gpu_devices': [{'name': 'Tesla V100-DGXS-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-DGXS-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-DGXS-32GB', 'memory_total': 34359738368}, {'name': 'Tesla V100-DGXS-32GB', 'memory_total': 34359738368}], 'memory': {'total': 251.59938049316406}}
+2025-04-01 20:39:34,098 INFO    HandlerThread:4158177 [system_monitor.py:probe():211] Finished collecting system info
+2025-04-01 20:39:34,099 INFO    HandlerThread:4158177 [system_monitor.py:probe():214] Publishing system info
+2025-04-01 20:39:34,099 DEBUG   HandlerThread:4158177 [system_info.py:_save_pip():52] Saving list of pip packages installed into the current environment
+2025-04-01 20:39:34,102 DEBUG   HandlerThread:4158177 [system_info.py:_save_pip():68] Saving pip packages done
+2025-04-01 20:39:34,102 DEBUG   HandlerThread:4158177 [system_info.py:_save_conda():75] Saving list of conda packages installed into the current environment
+2025-04-01 20:39:34,698 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/conda-environment.yaml
+2025-04-01 20:39:34,699 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/requirements.txt
+2025-04-01 20:39:41,480 DEBUG   HandlerThread:4158177 [system_info.py:_save_conda():87] Saving conda packages done
+2025-04-01 20:39:41,488 INFO    HandlerThread:4158177 [system_monitor.py:probe():216] Finished publishing system info
+2025-04-01 20:39:41,497 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:39:41,497 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: keepalive
+2025-04-01 20:39:41,499 DEBUG   SenderThread:4158177 [sender.py:send():379] send: files
+2025-04-01 20:39:41,499 INFO    SenderThread:4158177 [sender.py:_save_file():1375] saving file wandb-metadata.json with policy now
+2025-04-01 20:39:41,519 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:39:41,520 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:39:41,531 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:39:41,694 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/conda-environment.yaml
+2025-04-01 20:39:41,694 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/wandb-metadata.json
+2025-04-01 20:39:41,817 DEBUG   SenderThread:4158177 [sender.py:send():379] send: telemetry
+2025-04-01 20:39:41,817 DEBUG   SenderThread:4158177 [sender.py:send():379] send: telemetry
+2025-04-01 20:39:41,818 DEBUG   SenderThread:4158177 [sender.py:send():379] send: run
+2025-04-01 20:39:42,051 INFO    SenderThread:4158177 [sender.py:send_run():999] updated run: 47n33lrf
+2025-04-01 20:39:42,051 DEBUG   SenderThread:4158177 [sender.py:send():379] send: config
+2025-04-01 20:39:42,290 INFO    wandb-upload_0:4158177 [upload_job.py:push():131] Uploaded file /tmp/tmpq_yulcd6wandb/qpx4a599-wandb-metadata.json
+2025-04-01 20:39:42,694 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/config.yaml
+2025-04-01 20:39:42,695 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/output.log
+2025-04-01 20:39:44,148 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:39:44,695 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/output.log
+2025-04-01 20:39:46,697 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/output.log
+2025-04-01 20:39:49,473 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:39:54,474 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:39:56,519 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:39:56,520 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:39:56,527 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:39:59,716 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:04,728 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:05,707 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/config.yaml
+2025-04-01 20:40:10,014 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:11,519 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:40:11,520 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:40:11,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:40:15,805 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:20,805 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:25,806 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:26,520 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:40:26,520 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:40:26,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:40:31,763 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:33,962 DEBUG   SystemMonitor:4158177 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2025-04-01 20:40:33,967 DEBUG   SenderThread:4158177 [sender.py:send():379] send: stats
+2025-04-01 20:40:36,970 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:41,520 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:40:41,521 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:40:41,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:40:42,780 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:47,781 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:52,782 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:40:56,520 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:40:56,521 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:40:56,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:40:58,706 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:03,707 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:03,970 DEBUG   SenderThread:4158177 [sender.py:send():379] send: stats
+2025-04-01 20:41:08,973 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:11,520 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:41:11,521 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:41:11,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:41:14,793 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:19,794 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:24,795 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:26,520 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:41:26,521 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:41:26,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:41:30,741 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:33,976 DEBUG   SenderThread:4158177 [sender.py:send():379] send: stats
+2025-04-01 20:41:35,978 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:40,979 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:41,520 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:41:41,521 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:41:41,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:41:46,782 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:51,783 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:41:56,520 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:41:56,521 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:41:56,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:41:57,724 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:02,725 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:03,980 DEBUG   SenderThread:4158177 [sender.py:send():379] send: stats
+2025-04-01 20:42:07,983 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:11,521 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:42:11,522 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:42:11,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:42:13,744 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:18,745 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:23,746 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:26,521 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: stop_status
+2025-04-01 20:42:26,521 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: stop_status
+2025-04-01 20:42:26,563 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:42:29,574 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:30,356 DEBUG   SenderThread:4158177 [sender.py:send():379] send: exit
+2025-04-01 20:42:30,357 INFO    SenderThread:4158177 [sender.py:send_exit():584] handling exit code: 1
+2025-04-01 20:42:30,358 INFO    SenderThread:4158177 [sender.py:send_exit():586] handling runtime: 176
+2025-04-01 20:42:30,367 INFO    SenderThread:4158177 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-04-01 20:42:30,369 INFO    SenderThread:4158177 [sender.py:send_exit():592] send defer
+2025-04-01 20:42:30,370 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:30,371 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 0
+2025-04-01 20:42:30,372 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:30,372 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 0
+2025-04-01 20:42:30,372 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 1
+2025-04-01 20:42:30,373 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:30,373 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 1
+2025-04-01 20:42:30,374 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:30,374 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 1
+2025-04-01 20:42:30,374 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 2
+2025-04-01 20:42:30,375 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:30,375 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 2
+2025-04-01 20:42:30,375 INFO    HandlerThread:4158177 [system_monitor.py:finish():190] Stopping system monitor
+2025-04-01 20:42:30,376 DEBUG   SystemMonitor:4158177 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2025-04-01 20:42:30,377 DEBUG   SystemMonitor:4158177 [system_monitor.py:_start():170] Publishing last batch of metrics
+2025-04-01 20:42:30,384 INFO    HandlerThread:4158177 [interfaces.py:finish():202] Joined cpu monitor
+2025-04-01 20:42:30,387 INFO    HandlerThread:4158177 [interfaces.py:finish():202] Joined disk monitor
+2025-04-01 20:42:30,785 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_created():271] file/dir created: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/wandb-summary.json
+2025-04-01 20:42:31,072 INFO    HandlerThread:4158177 [interfaces.py:finish():202] Joined gpu monitor
+2025-04-01 20:42:31,073 INFO    HandlerThread:4158177 [interfaces.py:finish():202] Joined memory monitor
+2025-04-01 20:42:31,073 INFO    HandlerThread:4158177 [interfaces.py:finish():202] Joined network monitor
+2025-04-01 20:42:31,075 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:31,075 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 2
+2025-04-01 20:42:31,075 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 3
+2025-04-01 20:42:31,076 DEBUG   SenderThread:4158177 [sender.py:send():379] send: stats
+2025-04-01 20:42:31,078 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:31,078 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 3
+2025-04-01 20:42:31,079 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:31,079 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 3
+2025-04-01 20:42:31,079 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 4
+2025-04-01 20:42:31,079 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:31,080 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 4
+2025-04-01 20:42:31,080 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:31,081 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 4
+2025-04-01 20:42:31,081 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 5
+2025-04-01 20:42:31,081 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:31,081 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 5
+2025-04-01 20:42:31,082 DEBUG   SenderThread:4158177 [sender.py:send():379] send: summary
+2025-04-01 20:42:31,083 INFO    SenderThread:4158177 [sender.py:_save_file():1375] saving file wandb-summary.json with policy end
+2025-04-01 20:42:31,084 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:31,084 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 5
+2025-04-01 20:42:31,085 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 6
+2025-04-01 20:42:31,085 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:31,085 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 6
+2025-04-01 20:42:31,086 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:31,086 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 6
+2025-04-01 20:42:31,086 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 7
+2025-04-01 20:42:31,086 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:31,087 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:31,087 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 7
+2025-04-01 20:42:31,088 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:31,088 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 7
+2025-04-01 20:42:31,360 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: poll_exit
+2025-04-01 20:42:31,786 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/wandb-summary.json
+2025-04-01 20:42:31,787 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/output.log
+2025-04-01 20:42:33,588 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 8
+2025-04-01 20:42:33,588 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: poll_exit
+2025-04-01 20:42:33,588 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:33,590 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 8
+2025-04-01 20:42:33,590 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:33,591 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 8
+2025-04-01 20:42:33,591 INFO    SenderThread:4158177 [job_builder.py:build():281] Attempting to build job artifact
+2025-04-01 20:42:33,593 INFO    SenderThread:4158177 [job_builder.py:_get_source_type():393] is repo sourced job
+2025-04-01 20:42:33,600 INFO    SenderThread:4158177 [job_builder.py:build():369] adding wandb-job metadata file
+2025-04-01 20:42:33,609 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 9
+2025-04-01 20:42:33,610 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:33,610 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 9
+2025-04-01 20:42:33,611 DEBUG   SenderThread:4158177 [sender.py:send():379] send: artifact
+2025-04-01 20:42:33,787 INFO    Thread-17 :4158177 [dir_watcher.py:_on_file_modified():288] file/dir modified: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/output.log
+2025-04-01 20:42:35,294 INFO    wandb-upload_0:4158177 [upload_job.py:push():89] Uploaded file /home/frosa_Loc/.local/share/wandb/artifacts/staging/tmprxt0b3rx
+2025-04-01 20:42:35,492 INFO    wandb-upload_1:4158177 [upload_job.py:push():89] Uploaded file /home/frosa_Loc/.local/share/wandb/artifacts/staging/tmpjnxoavly
+2025-04-01 20:42:36,364 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: keepalive
+2025-04-01 20:42:36,856 INFO    SenderThread:4158177 [sender.py:send_artifact():1453] sent artifact job-https___github.com_MicheleSp27_Language-Conditioned-Imitation-Learning.git_test_multi_task_test_test_any_task.py - {'id': 'QXJ0aWZhY3Q6MTYxNjU0MjY4NA==', 'state': 'PENDING', 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjU5MzM5MDczNw==', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6MTYwOTM4MDg1MQ==', 'versionIndex': 1}}}
+2025-04-01 20:42:36,857 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:36,857 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: status_report
+2025-04-01 20:42:36,857 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 9
+2025-04-01 20:42:36,858 INFO    SenderThread:4158177 [dir_watcher.py:finish():358] shutting down directory watcher
+2025-04-01 20:42:37,790 INFO    SenderThread:4158177 [dir_watcher.py:finish():388] scan: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files
+2025-04-01 20:42:37,791 INFO    SenderThread:4158177 [dir_watcher.py:finish():402] scan save: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/wandb-metadata.json wandb-metadata.json
+2025-04-01 20:42:37,791 INFO    SenderThread:4158177 [dir_watcher.py:finish():402] scan save: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/wandb-summary.json wandb-summary.json
+2025-04-01 20:42:37,792 INFO    SenderThread:4158177 [dir_watcher.py:finish():402] scan save: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/output.log output.log
+2025-04-01 20:42:37,803 INFO    SenderThread:4158177 [dir_watcher.py:finish():402] scan save: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/requirements.txt requirements.txt
+2025-04-01 20:42:37,807 INFO    SenderThread:4158177 [dir_watcher.py:finish():402] scan save: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/conda-environment.yaml conda-environment.yaml
+2025-04-01 20:42:37,807 INFO    SenderThread:4158177 [dir_watcher.py:finish():402] scan save: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/config.yaml config.yaml
+2025-04-01 20:42:37,817 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 10
+2025-04-01 20:42:37,828 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:37,828 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 10
+2025-04-01 20:42:37,830 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:37,838 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 10
+2025-04-01 20:42:37,847 INFO    SenderThread:4158177 [file_pusher.py:finish():175] shutting down file pusher
+2025-04-01 20:42:38,246 INFO    wandb-upload_0:4158177 [upload_job.py:push():131] Uploaded file /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/wandb-summary.json
+2025-04-01 20:42:38,472 INFO    wandb-upload_1:4158177 [upload_job.py:push():131] Uploaded file /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/output.log
+2025-04-01 20:42:38,494 INFO    wandb-upload_2:4158177 [upload_job.py:push():131] Uploaded file /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/requirements.txt
+2025-04-01 20:42:38,540 INFO    wandb-upload_3:4158177 [upload_job.py:push():131] Uploaded file /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/conda-environment.yaml
+2025-04-01 20:42:38,572 INFO    wandb-upload_4:4158177 [upload_job.py:push():131] Uploaded file /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/files/config.yaml
+2025-04-01 20:42:38,772 INFO    Thread-16 :4158177 [sender.py:transition_state():612] send defer: 11
+2025-04-01 20:42:38,774 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:38,774 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 11
+2025-04-01 20:42:38,775 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:38,775 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 11
+2025-04-01 20:42:38,776 INFO    SenderThread:4158177 [file_pusher.py:join():181] waiting for file pusher
+2025-04-01 20:42:38,776 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 12
+2025-04-01 20:42:38,776 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:38,776 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 12
+2025-04-01 20:42:38,777 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:38,777 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 12
+2025-04-01 20:42:38,778 INFO    SenderThread:4158177 [file_stream.py:finish():594] file stream finish called
+2025-04-01 20:42:39,391 INFO    SenderThread:4158177 [file_stream.py:finish():598] file stream finish is done
+2025-04-01 20:42:39,391 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 13
+2025-04-01 20:42:39,392 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:39,393 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 13
+2025-04-01 20:42:39,393 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:39,393 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 13
+2025-04-01 20:42:39,394 INFO    SenderThread:4158177 [sender.py:transition_state():612] send defer: 14
+2025-04-01 20:42:39,395 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: defer
+2025-04-01 20:42:39,395 DEBUG   SenderThread:4158177 [sender.py:send():379] send: final
+2025-04-01 20:42:39,395 INFO    HandlerThread:4158177 [handler.py:handle_request_defer():170] handle defer: 14
+2025-04-01 20:42:39,395 DEBUG   SenderThread:4158177 [sender.py:send():379] send: footer
+2025-04-01 20:42:39,396 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: defer
+2025-04-01 20:42:39,396 INFO    SenderThread:4158177 [sender.py:send_request_defer():608] handle sender defer: 14
+2025-04-01 20:42:39,397 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: poll_exit
+2025-04-01 20:42:39,398 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: poll_exit
+2025-04-01 20:42:39,399 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: server_info
+2025-04-01 20:42:39,399 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: server_info
+2025-04-01 20:42:39,405 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: get_summary
+2025-04-01 20:42:39,408 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: sampled_history
+2025-04-01 20:42:39,409 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: internal_messages
+2025-04-01 20:42:39,410 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: job_info
+2025-04-01 20:42:39,565 DEBUG   SenderThread:4158177 [sender.py:send_request():406] send_request: job_info
+2025-04-01 20:42:39,566 INFO    MainThread:4158177 [wandb_run.py:_footer_history_summary_info():3557] rendering history
+2025-04-01 20:42:39,566 INFO    MainThread:4158177 [wandb_run.py:_footer_history_summary_info():3589] rendering summary
+2025-04-01 20:42:39,567 INFO    MainThread:4158177 [wandb_run.py:_footer_sync_info():3516] logging synced files
+2025-04-01 20:42:39,568 DEBUG   HandlerThread:4158177 [handler.py:handle_request():144] handle_request: shutdown
+2025-04-01 20:42:39,569 INFO    HandlerThread:4158177 [handler.py:finish():840] shutting down handler
+2025-04-01 20:42:40,411 INFO    WriterThread:4158177 [datastore.py:close():294] close: /raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/bashes/wandb/run-20250401_203933-47n33lrf/run-47n33lrf.wandb
+2025-04-01 20:42:40,565 INFO    SenderThread:4158177 [sender.py:finish():1531] shutting down sender
+2025-04-01 20:42:40,566 INFO    SenderThread:4158177 [file_pusher.py:finish():175] shutting down file pusher
+2025-04-01 20:42:40,566 INFO    SenderThread:4158177 [file_pusher.py:join():181] waiting for file pusher

@@ -1,0 +1,43 @@
+Found 4 GPU devices, using 1 parallel workers for evaluating 160 total trajectories
+Renderer is using size (200, 360)
+---- Testing model test_any_task.TransformerNetwork ----
+Model GPU id 1
+Seed: 2746317213
+GPU-ID 2
+Panda_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+Target object greenbox
+GPU-ID 2
+UR5e_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+GPU-ID 2
+UR5e_PickPlaceDistractor
+Render GPU id 2
+Object set 2
+Traceback (most recent call last):
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <module>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 633, in <listcomp>
+    task_success_flags = [f(seeds[i][0], seeds[i][1], seeds[i][2])
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 265, in _proc
+    return_rollout = rollout_imitation(model,
+  File "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py", line 186, in rollout_imitation
+    eval_fn = get_eval_fn(env_name=env_name)
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/test/multi_task_test/utils.py", line 2017, in get_eval_fn
+    from multi_task_test.pick_place import pick_place_eval
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/test/multi_task_test/pick_place.py", line 231, in <module>
+    def pick_place_eval_demo_cond(model, env, context, gpu_id, variation_id, img_formatter, max_T=85, concat_bb=False, baseline=False, action_ranges=[], gt_env=None, controller=None, task_name=None, config=None, gt_traj=None, perform_augs=True, predict_gt_bb=False, sub_action=False, gt_action=4, real=True, place=False, convert_action=False):
+  File "/raid/home/frosa_Loc/Multi-Task-LFD-Framework/repo/Multi-Task-LFD-Training-Framework/test/multi_task_test/pick_place.py", line 231, in <module>
+    def pick_place_eval_demo_cond(model, env, context, gpu_id, variation_id, img_formatter, max_T=85, concat_bb=False, baseline=False, action_ranges=[], gt_env=None, controller=None, task_name=None, config=None, gt_traj=None, perform_augs=True, predict_gt_bb=False, sub_action=False, gt_action=4, real=True, place=False, convert_action=False):
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1457, in _pydevd_bundle.pydevd_cython.SafeCallWrapper.__call__
+  File "_pydevd_bundle/pydevd_cython.pyx", line 701, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1152, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 1135, in _pydevd_bundle.pydevd_cython.PyDBFrame.trace_dispatch
+  File "_pydevd_bundle/pydevd_cython.pyx", line 312, in _pydevd_bundle.pydevd_cython.PyDBFrame.do_wait_suspend
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2070, in do_wait_suspend
+    keep_suspended = self._do_wait_suspend(thread, frame, event, arg, suspend_type, from_this_thread, frames_tracker)
+  File "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/lib/python3.9/site-packages/debugpy/_vendored/pydevd/pydevd.py", line 2106, in _do_wait_suspend
+    time.sleep(0.01)
+KeyboardInterrupt

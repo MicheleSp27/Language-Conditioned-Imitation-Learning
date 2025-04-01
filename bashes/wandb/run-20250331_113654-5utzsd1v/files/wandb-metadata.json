@@ -1,0 +1,281 @@
+{
+    "os": "Linux-5.15.0-125-generic-x86_64-with-glibc2.35",
+    "python": "3.9.17",
+    "heartbeatAt": "2025-03-31T09:36:55.072152",
+    "startedAt": "2025-03-31T09:36:54.202876",
+    "docker": null,
+    "cuda": null,
+    "args": [
+        "/user/frosa/RT-1-Checkpoint/rt-1_pretraining_simulated-Batch32",
+        "--env",
+        "pick_place",
+        "--debug",
+        "--saved_step",
+        "1",
+        "--eval_each_task",
+        "10",
+        "--num_workers",
+        "20",
+        "--project_name",
+        "rt-1_pretraining_simulated",
+        "--controller_path",
+        "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/tasks/multi_task_robosuite_env/controllers/config/osc_pose.json",
+        "--gpu_id",
+        "1",
+        "--wandb_log",
+        "--save_path",
+        "/user/frosa/RT-1-Checkpoint/rt-1_pretraining_simulated-Batch32/results_pick_place/run_1",
+        "--save_files"
+    ],
+    "state": "running",
+    "program": "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning/test/multi_task_test/test_any_task.py",
+    "codePathLocal": null,
+    "codePath": "test/multi_task_test/test_any_task.py",
+    "git": {
+        "remote": "https://github.com/MicheleSp27/Language-Conditioned-Imitation-Learning.git",
+        "commit": "c7638acd48bddd19f29341006843c652739aa794"
+    },
+    "email": "m.spremulli1@studenti.unisa.it",
+    "root": "/raid/home/frosa_Loc/Language-Conditioned-Imitation-Learning",
+    "host": "diem-dgx1-v100",
+    "username": "frosa_Loc",
+    "executable": "/raid/home/frosa_Loc/conda/envs/multi_task_lfd/bin/python",
+    "cpu_count": 20,
+    "cpu_count_logical": 40,
+    "cpu_freq": {
+        "current": 1731.6769,
+        "min": 1200.0,
+        "max": 3600.0
+    },
+    "cpu_freq_per_core": [
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2181.293,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2300.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 2244.179,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 3600.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        },
+        {
+            "current": 1200.0,
+            "min": 1200.0,
+            "max": 3600.0
+        }
+    ],
+    "disk": {
+        "/": {
+            "total": 1758.88041305542,
+            "used": 1564.329402923584
+        }
+    },
+    "gpu": "Tesla V100-DGXS-32GB",
+    "gpu_count": 4,
+    "gpu_devices": [
+        {
+            "name": "Tesla V100-DGXS-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-DGXS-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-DGXS-32GB",
+            "memory_total": 34359738368
+        },
+        {
+            "name": "Tesla V100-DGXS-32GB",
+            "memory_total": 34359738368
+        }
+    ],
+    "memory": {
+        "total": 251.59938049316406
+    }
+}
