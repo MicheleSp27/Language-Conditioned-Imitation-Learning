@@ -1,9 +1,15 @@
 ---
 
  evaluations_parameters:
-  data_path : "/mnt/localstorage/mspremulli/Simulated_Converted_Delta/"
-  checkpoint_path : "/user/mspremulli/Language-Conditioned-IL/rt-1_simulated_checkpoints_no_pretraining/rt-1_pretraining_simulated_checkpoint_epoch_65_loss_0.008187112072988612_batch_32"
-  number_of_trajectories : 10 
+  data_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta2/"
+  checkpoint_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt_1_simulated_checkpoints_changed_sampler_final_action_space_new_dataset/model_save-6831.pt"
+  number_of_trajectories : 100 # Works only if balanced is set to false
+  interval : 5
+  checkpoint : True
+  changed_action_space : True
+  balanced : False # If false, number_of_trajectories trajectories are sampled at random 
+  number_of_trajectories_for_variation : 10
+  use_predefined_trajectories : False # If true, a predefined set of trajectories is used for the evaluation
 
  Original : False
 
@@ -59,10 +65,23 @@
       image_width : 200
       image_space_low : 0.0
       image_space_high : 1.0
-      world_vector_space_shape : 3
-      world_vector_space_low : -1.0
-      world_vector_space_high : 1.0
-      rotation_delta_space_shape : 3
-      rotation_delta_space_low : -6.28
-      rotation_delta_space_high : 6.28
+      x_axis_shape : 1
+      x_axis_low : -0.007
+      x_axis_high : 0.025
+      y_axis_shape : 1
+      y_axis_low : -0.016
+      y_axis_high : 0.017
+      z_axis_shape : 1
+      z_axis_low : -0.018
+      z_axis_high : 0.017
+      roll_shape : 1
+      roll_low : -0.06
+      roll_high : 0.08
+      pitch_shape : 1
+      pitch_low : -0.11
+      pitch_high : 0.05
+      yaw_shape : 1
+      yaw_low : -0.08
+      yaw_high : 0.3
       gripper_closedness_space_shape : 2
+

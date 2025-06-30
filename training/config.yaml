@@ -55,11 +55,11 @@ Transformer_MIVIA :
       image_space_low : 0.0
       image_space_high : 1.0
       world_vector_space_shape : 3
-      world_vector_space_low : -1.0
-      world_vector_space_high : 1.0
+      world_vector_space_low : -0.03
+      world_vector_space_high : 0.03
       rotation_delta_space_shape : 3
-      rotation_delta_space_low : -6.28
-      rotation_delta_space_high : 6.28
+      rotation_delta_space_low : -0.5
+      rotation_delta_space_high : 0.5
       gripper_closedness_space_shape : 2
 
 rt1_dataset:
@@ -70,17 +70,17 @@ rt1_dataset:
 
 mivia_simulated_dataset:
     _target_ : training.CustomDataset
-    data_path : "/user/mspremulli/Language-Conditioned-IL/data/converted_simulated_ur5e_delta/"
+    data_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta/"
     time_sequence_length : 6
     discard_length : 12
 
 training:
-   epochs : 90
+   epochs : 250
    batch_size : 32
    num_workers : 8
    checkpoint : 5
-   checkpoint_save_path : "/user/mspremulli/Language-Conditioned-IL/rt-1_simulated_checkpoints_no_pretraining/"
+   checkpoint_save_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt-1_simulated_checkpoints_original_action_space_changed_sampler3/"
    load_pretraining : False
-   checkpoint_pretraining : "/user/mspremulli/Language-Conditioned-IL/rt1_checkpoints/rt-1_pretraining_checkpoint_epoch_8_loss_101.1661436528666_batch_32"
+   checkpoint_pretraining : ""
   
  

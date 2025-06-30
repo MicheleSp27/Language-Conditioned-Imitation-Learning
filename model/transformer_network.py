@@ -30,6 +30,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 from gym import spaces
 from collections import OrderedDict
+import torchvision.transforms as transforms
 
 
 
@@ -74,18 +75,6 @@ class TransformerNetwork(nn.Module):
         self._image_space_low = params_dict["image_space_low"]
         self._image_space_high = params_dict["image_space_high"]
 
-        self._world_vector_space_shape = params_dict["world_vector_space_shape"]
-        self._world_vector_space_low = params_dict["world_vector_space_low"]
-        self._world_vector_space_high = params_dict["world_vector_space_high"]
-        self._rotation_delta_space_shape = params_dict["rotation_delta_space_shape"]
-        self._rotation_delta_space_low = params_dict["rotation_delta_space_low"]
-        self._rotation_delta_space_high = params_dict["rotation_delta_space_high"]
-        self._gripper_closedness_action_space_shape = params_dict["gripper_closedness_space_shape"]
-
-        if use_original_robotic_platform :
-            self._gripper_closedness_action_space_low = params_dict["gripper_closedness_space_low"]
-            self._gripper_closedness_action_space_high = params_dict["gripper_closedness_space_high"]
-
 
         self._input_tensor_space = spaces.Dict(
         {
@@ -98,26 +87,63 @@ class TransformerNetwork(nn.Module):
 
 
         if use_original_robotic_platform :
+          
+            self._world_vector_space_shape = params_dict["world_vector_space_shape"]
+            self._world_vector_space_low = params_dict["world_vector_space_low"]
+            self._world_vector_space_high = params_dict["world_vector_space_high"]
+            self._rotation_delta_space_shape = params_dict["rotation_delta_space_shape"]
+            self._rotation_delta_space_low = params_dict["rotation_delta_space_low"]
+            self._rotation_delta_space_high = params_dict["rotation_delta_space_high"]
+            self._gripper_closedness_action_space_shape = params_dict["gripper_closedness_space_shape"]
+            self._gripper_closedness_action_space_low = params_dict["gripper_closedness_space_low"]
+            self._gripper_closedness_action_space_high = params_dict["gripper_closedness_space_high"]
 
-          self._output_tensor_space = spaces.Dict(
+            self._output_tensor_space = spaces.Dict(
 
-            OrderedDict([
-                ('world_vector', spaces.Box(low= self._world_vector_space_low, high= self._world_vector_space_high, shape=(self._world_vector_space_shape,), dtype=np.float32)),
-                ('rotation_delta', spaces.Box(low= self._rotation_delta_space_low / 2, high= self._rotation_delta_space_high / 2, shape=(self._rotation_delta_space_shape,), dtype=np.float32)),
-                ('gripper_closedness_action', spaces.Box(low= self._gripper_closedness_action_space_low  , high= self._gripper_closedness_action_space_high, shape=(self._gripper_closedness_action_space_shape,), dtype=np.float32))
-                ]))
+                OrderedDict([
+                    ('world_vector', spaces.Box(low= self._world_vector_space_low, high= self._world_vector_space_high, shape=(self._world_vector_space_shape,), dtype=np.float32)),
+                    ('rotation_delta', spaces.Box(low= self._rotation_delta_space_low / 2, high= self._rotation_delta_space_high / 2, shape=(self._rotation_delta_space_shape,), dtype=np.float32)),
+                    ('gripper_closedness_action', spaces.Box(low= self._gripper_closedness_action_space_low  , high= self._gripper_closedness_action_space_high, shape=(self._gripper_closedness_action_space_shape,), dtype=np.float32))
+                    ]))
 
         else : 
 
             print("UR5e Robotic Platform Action Space")
+
+            self._x_axis_shape = params_dict["x_axis_shape"]
+            self._x_axis_low = params_dict["x_axis_low"]
+            self._x_axis_high = params_dict["x_axis_high"]
+            
+            self._y_axis_shape = params_dict["y_axis_shape"]
+            self._y_axis_low = params_dict["y_axis_low"]
+            self._y_axis_high = params_dict["y_axis_high"]
+
+            self._z_axis_shape = params_dict["z_axis_shape"]
+            self._z_axis_low = params_dict["z_axis_low"]
+            self._z_axis_high = params_dict["z_axis_high"]
+
+            self._roll_shape = params_dict["roll_shape"]
+            self._roll_low = params_dict["roll_low"]
+            self._roll_high = params_dict["roll_high"]
+
+            self._pitch_shape = params_dict["pitch_shape"]
+            self._pitch_low = params_dict["pitch_low"]
+            self._pitch_high = params_dict["pitch_high"]
+
+            self._yaw_shape = params_dict["yaw_shape"]
+            self._yaw_low = params_dict["yaw_low"]
+            self._yaw_high = params_dict["yaw_high"]
             self._output_tensor_space = spaces.Dict(
                 
-            OrderedDict([
-                ('world_vector', spaces.Box(low= self._world_vector_space_low, high= self._world_vector_space_high, shape=(self._world_vector_space_shape,), dtype=np.float32)),
-                ('rotation_delta', spaces.Box(low= self._rotation_delta_space_low, high= self._rotation_delta_space_high, shape=(self._rotation_delta_space_shape,), dtype=np.float32)),
-                ('gripper_closedness_action', spaces.Discrete(2))
-                ]))
-            
+                OrderedDict([
+                    ('x_axis', spaces.Box(low= self._x_axis_low, high= self._x_axis_high, shape=(self._x_axis_shape,), dtype=np.float32)),
+                    ('y_axis', spaces.Box(low= self._y_axis_low, high= self._y_axis_high, shape=(self._y_axis_shape,), dtype=np.float32)),
+                    ('z_axis', spaces.Box(low= self._z_axis_low, high= self._z_axis_high, shape=(self._z_axis_shape,), dtype=np.float32)),
+                    ('roll', spaces.Box(low= self._roll_low, high= self._roll_high, shape=(self._roll_shape,), dtype=np.float32)),
+                    ('pitch', spaces.Box(low= self._pitch_low, high= self._pitch_high, shape=(self._pitch_shape,), dtype=np.float32)),
+                    ('yaw', spaces.Box(low= self._yaw_low, high= self._yaw_high, shape=(self._yaw_shape,), dtype=np.float32)),
+                    ('gripper_closedness_action', spaces.Discrete(2))]))
+                
 
         # creatr transformer
         self._transformer = Transformer(
@@ -318,7 +344,7 @@ class TransformerNetwork(nn.Module):
                 token, token_logits = self._transformer_call_and_slice(
                     context_image_tokens,
                     action_tokens,
-                    attention_mask=attention_mask,
+                    attention_mask=attention_mask.to('cuda'),
                     batch_size=b,
                     slice_start=action_index  # slicing single action dimension
                 )
@@ -522,6 +548,8 @@ class TransformerNetwork(nn.Module):
         image = image.view((b*input_t, c, h, w)) # image is already tensor and its range is [0,1]
         image = convert_dtype_and_crop_images(image)
         image =image.view((b, input_t, c, h, w))
+
+
 
 
 

@@ -89,7 +89,7 @@ class CustomDataset(Dataset):
       # Observations from observation_index - time_sequence_length + 1 to observation_index are extracted
       # If observation_index - time_sequence_length + 1 < 0, the missing observations are replaced with the first observation of the trajectory
 
-
+    
       low_index = observation_index - self._time_sequence_length + 1
 
       for i in range(low_index, observation_index + 1):
@@ -116,6 +116,7 @@ class CustomDataset(Dataset):
           next_action_gripper = episode[k]["action"]["gripper_closedness_action"][None,:]
           next_action_rotation_delta = episode[k]["action"]["rotation_delta"][None,:]
           next_action_world_vector = episode[k]["action"]["world_vector"][None,:]
+         
 
           images = torch.concatenate((images, next_images), dim = 0)
           natural_language_embedding = np.concatenate((natural_language_embedding, next_natural_language_embedding), axis = 0)

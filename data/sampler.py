@@ -160,4 +160,5 @@ class CustomSampler(Sampler):
     print("Traiettorie non finite : ")
     print(not_finished_trajectory)
     """
+    
       

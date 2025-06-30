@@ -12,6 +12,7 @@ from data.sampler import CustomSampler
 import torch
 import numpy as np 
 from torch.utils.data import DataLoader
+import torchvision.transforms as transforms
 
 
 @hydra.main(version_base=None, config_path="", config_name="config")
@@ -82,13 +83,16 @@ def training_procedure(config):
   # Adam is the optimizer used in the training test from the original work
   optimizer = torch.optim.AdamW(robotic_transformer_model.parameters())
 
-  wandb.init(project = "RT-1 No Pretraining Simulated Training", entity = "m-spremulli1-universit-degli-studi-di-salerno")
+  wandb.init(project = "RT-1 No Pretraining Original Action Space Simulated Training", entity = "m-spremulli1-universit-degli-studi-di-salerno")
+  step = 0 # Training Counter Step
+
 
   actions = {}
   for epoch in range(epochs):
 
     loss_sum = 0
     batch = 1
+    
 
     print("Epoch : {}".format(epoch + 1))
 
@@ -105,10 +109,13 @@ def training_procedure(config):
 
       
       observations = {"image":images.to(device), "natural_language_embedding":natural_language_embedding.to(device)}
-
+      batch = batch + 1
+      print(batch)
+      
       robotic_transformer_model.set_actions(actions)
       predicted_action, network_state = robotic_transformer_model(observations, network_state)
-
+      
+      
       loss = robotic_transformer_model._loss
       
       loss.backward()
@@ -117,29 +124,31 @@ def training_procedure(config):
 
       loss_sum = loss_sum + loss.item()
 
-      print("Epoch : {} Batch : {} Loss : {} Loss Epoch : {}".format(epoch + 1, batch, loss.item(), loss_sum))
+      print("Epoch : {} Batch : {} Loss : {} Loss Epoch : {}".format(epoch + 1, batch, loss.item(), loss_sum/batch))
 
 
       if batch % 10 == 0:
         wandb.log({"loss" : loss.item(), "batch" : batch, "epoch" : epoch + 1})
       
       batch = batch + 1
+      step = step + 1
 
     if (epoch + 1) % checkpoint == 0: 
       print("Saving Checkpoint...")
-      wandb.log({"loss_epoch" : loss_sum})
       torch.save({
             "model_state_dict" : robotic_transformer_model.state_dict(),
             "epoch" : epoch + 1,
             "optimizer_state_dict" : optimizer.state_dict(),
             "loss" : loss_sum
-        },checkpoint_path + "rt-1_pretraining_simulated_checkpoint_epoch_{}_loss_{}_batch_{}".format(epoch + 1, loss_sum, batch_size))
+        },checkpoint_path + "model_save-{}.pt".format(int(step/10)))
       print("Checkpoint Saved")
     
+    wandb.log({"loss_epoch" : loss_sum/batch})
     wandb.save("training_plot.pth")
 
 if __name__ == "__main__":
   training_procedure()
+  
 
 
         

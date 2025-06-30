@@ -1,0 +1,1815 @@
+Testing MIVIA RT-1 on the simulated dataset trained for 6 epochs on 100 trajectories with interval set to 5
+Task : Pick yellow box and place it into the second bin
+Task Length : 64
+Accuracy X : 0.375
+Accuracy Y : 0.234375
+Accuracy Z : 0.5625
+Accuracy Roll : 0.6875
+Accuracy Pitch : 0.703125
+Accuracy Yaw : 0.90625
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.96875
+Interval Accuracy Y : 0.953125
+Interval Accuracy Z : 0.984375
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.984375
+Interval Accuracy Yaw : 0.984375
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 70
+Accuracy X : 0.5
+Accuracy Y : 0.2857142857142857
+Accuracy Z : 0.7428571428571429
+Accuracy Roll : 0.8285714285714286
+Accuracy Pitch : 0.7857142857142857
+Accuracy Yaw : 0.8857142857142857
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9571428571428572
+Interval Accuracy Y : 0.9714285714285714
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9857142857142858
+Interval Accuracy Pitch : 0.9857142857142858
+Interval Accuracy Yaw : 0.9857142857142858
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the fourth bin
+Task Length : 73
+Accuracy X : 0.410958904109589
+Accuracy Y : 0.3287671232876712
+Accuracy Z : 0.7534246575342466
+Accuracy Roll : 0.7534246575342466
+Accuracy Pitch : 0.7534246575342466
+Accuracy Yaw : 0.8493150684931506
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.958904109589041
+Interval Accuracy Y : 0.9863013698630136
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9863013698630136
+Interval Accuracy Pitch : 0.9726027397260274
+Interval Accuracy Yaw : 0.9863013698630136
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the first bin
+Task Length : 90
+Accuracy X : 0.25555555555555554
+Accuracy Y : 0.3111111111111111
+Accuracy Z : 0.5777777777777777
+Accuracy Roll : 0.6888888888888889
+Accuracy Pitch : 0.7777777777777778
+Accuracy Yaw : 0.8777777777777778
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.8888888888888888
+Interval Accuracy Y : 0.9444444444444444
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9888888888888889
+Interval Accuracy Pitch : 0.9666666666666667
+Interval Accuracy Yaw : 0.9888888888888889
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 78
+Accuracy X : 0.44871794871794873
+Accuracy Y : 0.44871794871794873
+Accuracy Z : 0.782051282051282
+Accuracy Roll : 0.7564102564102564
+Accuracy Pitch : 0.6923076923076923
+Accuracy Yaw : 0.9358974358974359
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9871794871794872
+Interval Accuracy Y : 0.9615384615384616
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9743589743589743
+Interval Accuracy Pitch : 0.9743589743589743
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 65
+Accuracy X : 0.4153846153846154
+Accuracy Y : 0.4153846153846154
+Accuracy Z : 0.7076923076923077
+Accuracy Roll : 0.7384615384615385
+Accuracy Pitch : 0.6
+Accuracy Yaw : 0.8307692307692308
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9846153846153847
+Interval Accuracy Y : 0.9692307692307692
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9692307692307692
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the first bin
+Task Length : 74
+Accuracy X : 0.5
+Accuracy Y : 0.2972972972972973
+Accuracy Z : 0.6216216216216216
+Accuracy Roll : 0.6351351351351351
+Accuracy Pitch : 0.5675675675675675
+Accuracy Yaw : 0.8513513513513513
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9459459459459459
+Interval Accuracy Y : 0.972972972972973
+Interval Accuracy Z : 0.972972972972973
+Interval Accuracy Roll : 0.972972972972973
+Interval Accuracy Pitch : 0.9594594594594594
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 81
+Accuracy X : 0.4074074074074074
+Accuracy Y : 0.41975308641975306
+Accuracy Z : 0.7777777777777778
+Accuracy Roll : 0.8148148148148148
+Accuracy Pitch : 0.8395061728395061
+Accuracy Yaw : 0.8888888888888888
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9753086419753086
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 67
+Accuracy X : 0.6268656716417911
+Accuracy Y : 0.7164179104477612
+Accuracy Z : 0.7910447761194029
+Accuracy Roll : 0.746268656716418
+Accuracy Pitch : 0.8208955223880597
+Accuracy Yaw : 0.8955223880597015
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9850746268656716
+Interval Accuracy Y : 0.9701492537313433
+Interval Accuracy Z : 0.9850746268656716
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9850746268656716
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the first bin
+Task Length : 65
+Accuracy X : 0.5846153846153846
+Accuracy Y : 0.47692307692307695
+Accuracy Z : 0.7384615384615385
+Accuracy Roll : 0.7384615384615385
+Accuracy Pitch : 0.7230769230769231
+Accuracy Yaw : 0.9076923076923077
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9692307692307692
+Interval Accuracy Y : 0.9692307692307692
+Interval Accuracy Z : 0.9846153846153847
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 0.9692307692307692
+Interval Accuracy Yaw : 0.9846153846153847
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 66
+Accuracy X : 0.7121212121212122
+Accuracy Y : 0.5
+Accuracy Z : 0.7272727272727273
+Accuracy Roll : 0.7121212121212122
+Accuracy Pitch : 0.7727272727272727
+Accuracy Yaw : 0.8787878787878788
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9545454545454546
+Interval Accuracy Y : 0.9848484848484849
+Interval Accuracy Z : 0.9848484848484849
+Interval Accuracy Roll : 0.9848484848484849
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.9696969696969697
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 71
+Accuracy X : 0.4647887323943662
+Accuracy Y : 0.4647887323943662
+Accuracy Z : 0.676056338028169
+Accuracy Roll : 0.8169014084507042
+Accuracy Pitch : 0.7464788732394366
+Accuracy Yaw : 0.8591549295774648
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9859154929577465
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9859154929577465
+Interval Accuracy Pitch : 0.9859154929577465
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the fourth bin
+Task Length : 71
+Accuracy X : 0.5915492957746479
+Accuracy Y : 0.4225352112676056
+Accuracy Z : 0.7183098591549296
+Accuracy Roll : 0.7887323943661971
+Accuracy Pitch : 0.8028169014084507
+Accuracy Yaw : 0.8873239436619719
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9295774647887324
+Interval Accuracy Y : 0.9859154929577465
+Interval Accuracy Z : 0.9859154929577465
+Interval Accuracy Roll : 0.9859154929577465
+Interval Accuracy Pitch : 0.971830985915493
+Interval Accuracy Yaw : 0.9859154929577465
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 68
+Accuracy X : 0.47058823529411764
+Accuracy Y : 0.4264705882352941
+Accuracy Z : 0.6911764705882353
+Accuracy Roll : 0.6617647058823529
+Accuracy Pitch : 0.75
+Accuracy Yaw : 0.9411764705882353
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9852941176470589
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9852941176470589
+Interval Accuracy Pitch : 0.9705882352941176
+Interval Accuracy Yaw : 0.9852941176470589
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the second bin
+Task Length : 65
+Accuracy X : 0.46153846153846156
+Accuracy Y : 0.35384615384615387
+Accuracy Z : 0.7384615384615385
+Accuracy Roll : 0.7384615384615385
+Accuracy Pitch : 0.8153846153846154
+Accuracy Yaw : 0.9538461538461539
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9538461538461539
+Interval Accuracy Y : 0.9846153846153847
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 65
+Accuracy X : 0.5846153846153846
+Accuracy Y : 0.6461538461538462
+Accuracy Z : 0.7692307692307693
+Accuracy Roll : 0.7384615384615385
+Accuracy Pitch : 0.7384615384615385
+Accuracy Yaw : 0.8923076923076924
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9692307692307692
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9846153846153847
+Interval Accuracy Yaw : 0.9846153846153847
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the first bin
+Task Length : 90
+Accuracy X : 0.37777777777777777
+Accuracy Y : 0.34444444444444444
+Accuracy Z : 0.7111111111111111
+Accuracy Roll : 0.7333333333333333
+Accuracy Pitch : 0.8111111111111111
+Accuracy Yaw : 0.8888888888888888
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9777777777777777
+Interval Accuracy Y : 0.9666666666666667
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9888888888888889
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 62
+Accuracy X : 0.6290322580645161
+Accuracy Y : 0.5806451612903226
+Accuracy Z : 0.7580645161290323
+Accuracy Roll : 0.8225806451612904
+Accuracy Pitch : 0.7903225806451613
+Accuracy Yaw : 0.8870967741935484
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.967741935483871
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9838709677419355
+Interval Accuracy Yaw : 0.967741935483871
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 75
+Accuracy X : 0.49333333333333335
+Accuracy Y : 0.48
+Accuracy Z : 0.8533333333333334
+Accuracy Roll : 0.7066666666666667
+Accuracy Pitch : 0.8266666666666667
+Accuracy Yaw : 0.9466666666666667
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9866666666666667
+Interval Accuracy Y : 0.96
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9866666666666667
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 68
+Accuracy X : 0.47058823529411764
+Accuracy Y : 0.3382352941176471
+Accuracy Z : 0.7794117647058824
+Accuracy Roll : 0.7647058823529411
+Accuracy Pitch : 0.7941176470588235
+Accuracy Yaw : 0.7794117647058824
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9852941176470589
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 0.9852941176470589
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9852941176470589
+Interval Accuracy Yaw : 0.9705882352941176
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the second bin
+Task Length : 79
+Accuracy X : 0.569620253164557
+Accuracy Y : 0.4177215189873418
+Accuracy Z : 0.569620253164557
+Accuracy Roll : 0.7468354430379747
+Accuracy Pitch : 0.7215189873417721
+Accuracy Yaw : 0.8607594936708861
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9367088607594937
+Interval Accuracy Y : 0.9746835443037974
+Interval Accuracy Z : 0.9873417721518988
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9746835443037974
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 63
+Accuracy X : 0.6825396825396826
+Accuracy Y : 0.5714285714285714
+Accuracy Z : 0.7936507936507936
+Accuracy Roll : 0.746031746031746
+Accuracy Pitch : 0.7619047619047619
+Accuracy Yaw : 0.8253968253968254
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9682539682539683
+Interval Accuracy Y : 0.9682539682539683
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the second bin
+Task Length : 63
+Accuracy X : 0.5714285714285714
+Accuracy Y : 0.5873015873015873
+Accuracy Z : 0.7777777777777778
+Accuracy Roll : 0.7777777777777778
+Accuracy Pitch : 0.7619047619047619
+Accuracy Yaw : 0.7619047619047619
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9523809523809523
+Interval Accuracy Y : 0.9841269841269841
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9523809523809523
+Interval Accuracy Yaw : 0.9841269841269841
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the first bin
+Task Length : 73
+Accuracy X : 0.5068493150684932
+Accuracy Y : 0.2602739726027397
+Accuracy Z : 0.6712328767123288
+Accuracy Roll : 0.6438356164383562
+Accuracy Pitch : 0.6986301369863014
+Accuracy Yaw : 0.8356164383561644
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9726027397260274
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9726027397260274
+Interval Accuracy Yaw : 0.9863013698630136
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the first bin
+Task Length : 64
+Accuracy X : 0.53125
+Accuracy Y : 0.265625
+Accuracy Z : 0.734375
+Accuracy Roll : 0.71875
+Accuracy Pitch : 0.640625
+Accuracy Yaw : 0.828125
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.90625
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.984375
+Interval Accuracy Pitch : 0.953125
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 64
+Accuracy X : 0.5
+Accuracy Y : 0.453125
+Accuracy Z : 0.65625
+Accuracy Roll : 0.6875
+Accuracy Pitch : 0.6875
+Accuracy Yaw : 0.90625
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.984375
+Interval Accuracy Y : 0.90625
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.984375
+Interval Accuracy Pitch : 0.984375
+Interval Accuracy Yaw : 0.96875
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the second bin
+Task Length : 64
+Accuracy X : 0.625
+Accuracy Y : 0.40625
+Accuracy Z : 0.734375
+Accuracy Roll : 0.78125
+Accuracy Pitch : 0.734375
+Accuracy Yaw : 0.90625
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9375
+Interval Accuracy Y : 0.96875
+Interval Accuracy Z : 0.953125
+Interval Accuracy Roll : 0.984375
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.984375
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the fourth bin
+Task Length : 76
+Accuracy X : 0.5526315789473685
+Accuracy Y : 0.47368421052631576
+Accuracy Z : 0.7368421052631579
+Accuracy Roll : 0.7105263157894737
+Accuracy Pitch : 0.6842105263157895
+Accuracy Yaw : 0.8421052631578947
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9605263157894737
+Interval Accuracy Y : 0.9605263157894737
+Interval Accuracy Z : 0.9868421052631579
+Interval Accuracy Roll : 0.9605263157894737
+Interval Accuracy Pitch : 0.9736842105263158
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 67
+Accuracy X : 0.3582089552238806
+Accuracy Y : 0.3283582089552239
+Accuracy Z : 0.5970149253731343
+Accuracy Roll : 0.5970149253731343
+Accuracy Pitch : 0.5223880597014925
+Accuracy Yaw : 0.746268656716418
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9253731343283582
+Interval Accuracy Y : 0.9402985074626866
+Interval Accuracy Z : 0.9701492537313433
+Interval Accuracy Roll : 0.9850746268656716
+Interval Accuracy Pitch : 0.9402985074626866
+Interval Accuracy Yaw : 0.9850746268656716
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the first bin
+Task Length : 65
+Accuracy X : 0.6153846153846154
+Accuracy Y : 0.5076923076923077
+Accuracy Z : 0.8923076923076924
+Accuracy Roll : 0.9076923076923077
+Accuracy Pitch : 0.9384615384615385
+Accuracy Yaw : 0.9384615384615385
+Accuracy Gripper : 0.9076923076923077
+Interval Accuracy X : 0.9846153846153847
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 0.9846153846153847
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.9846153846153847
+Interval Accuracy Gripper : 0.9076923076923077
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 65
+Accuracy X : 0.7230769230769231
+Accuracy Y : 0.49230769230769234
+Accuracy Z : 0.6615384615384615
+Accuracy Roll : 0.6923076923076923
+Accuracy Pitch : 0.7846153846153846
+Accuracy Yaw : 0.7692307692307693
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9846153846153847
+Interval Accuracy Y : 0.9384615384615385
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 0.9846153846153847
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the third bin
+Task Length : 64
+Accuracy X : 0.515625
+Accuracy Y : 0.421875
+Accuracy Z : 0.734375
+Accuracy Roll : 0.765625
+Accuracy Pitch : 0.6875
+Accuracy Yaw : 0.90625
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.96875
+Interval Accuracy Y : 0.984375
+Interval Accuracy Z : 0.984375
+Interval Accuracy Roll : 0.984375
+Interval Accuracy Pitch : 0.96875
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the third bin
+Task Length : 65
+Accuracy X : 0.6307692307692307
+Accuracy Y : 0.6
+Accuracy Z : 0.8153846153846154
+Accuracy Roll : 0.7230769230769231
+Accuracy Pitch : 0.8307692307692308
+Accuracy Yaw : 0.8
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9384615384615385
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the third bin
+Task Length : 75
+Accuracy X : 0.44
+Accuracy Y : 0.4
+Accuracy Z : 0.6933333333333334
+Accuracy Roll : 0.6666666666666666
+Accuracy Pitch : 0.7333333333333333
+Accuracy Yaw : 0.92
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9733333333333334
+Interval Accuracy Y : 0.9066666666666666
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9866666666666667
+Interval Accuracy Pitch : 0.9866666666666667
+Interval Accuracy Yaw : 0.9866666666666667
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the first bin
+Task Length : 88
+Accuracy X : 0.32954545454545453
+Accuracy Y : 0.3181818181818182
+Accuracy Z : 0.5909090909090909
+Accuracy Roll : 0.7272727272727273
+Accuracy Pitch : 0.7045454545454546
+Accuracy Yaw : 0.8863636363636364
+Accuracy Gripper : 0.9886363636363636
+Interval Accuracy X : 0.9431818181818182
+Interval Accuracy Y : 0.9090909090909091
+Interval Accuracy Z : 0.9886363636363636
+Interval Accuracy Roll : 0.9772727272727273
+Interval Accuracy Pitch : 0.9659090909090909
+Interval Accuracy Yaw : 0.9772727272727273
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the first bin
+Task Length : 77
+Accuracy X : 0.42857142857142855
+Accuracy Y : 0.3116883116883117
+Accuracy Z : 0.4935064935064935
+Accuracy Roll : 0.6883116883116883
+Accuracy Pitch : 0.6103896103896104
+Accuracy Yaw : 0.7922077922077922
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.922077922077922
+Interval Accuracy Y : 0.935064935064935
+Interval Accuracy Z : 0.961038961038961
+Interval Accuracy Roll : 0.961038961038961
+Interval Accuracy Pitch : 0.935064935064935
+Interval Accuracy Yaw : 0.987012987012987
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 79
+Accuracy X : 0.5569620253164557
+Accuracy Y : 0.43037974683544306
+Accuracy Z : 0.7848101265822784
+Accuracy Roll : 0.8607594936708861
+Accuracy Pitch : 0.810126582278481
+Accuracy Yaw : 0.8987341772151899
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9746835443037974
+Interval Accuracy Y : 0.9873417721518988
+Interval Accuracy Z : 0.9873417721518988
+Interval Accuracy Roll : 0.9873417721518988
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the first bin
+Task Length : 66
+Accuracy X : 0.45454545454545453
+Accuracy Y : 0.2878787878787879
+Accuracy Z : 0.5757575757575758
+Accuracy Roll : 0.7424242424242424
+Accuracy Pitch : 0.7575757575757576
+Accuracy Yaw : 0.9090909090909091
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9696969696969697
+Interval Accuracy Y : 0.9848484848484849
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9848484848484849
+Interval Accuracy Pitch : 0.9696969696969697
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 67
+Accuracy X : 0.417910447761194
+Accuracy Y : 0.40298507462686567
+Accuracy Z : 0.6268656716417911
+Accuracy Roll : 0.746268656716418
+Accuracy Pitch : 0.7313432835820896
+Accuracy Yaw : 0.9402985074626866
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9402985074626866
+Interval Accuracy Y : 0.8805970149253731
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9850746268656716
+Interval Accuracy Pitch : 0.9850746268656716
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the first bin
+Task Length : 76
+Accuracy X : 0.27631578947368424
+Accuracy Y : 0.32894736842105265
+Accuracy Z : 0.7894736842105263
+Accuracy Roll : 0.75
+Accuracy Pitch : 0.7236842105263158
+Accuracy Yaw : 0.8552631578947368
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9342105263157895
+Interval Accuracy Y : 0.9868421052631579
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9605263157894737
+Interval Accuracy Yaw : 0.9868421052631579
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 69
+Accuracy X : 0.5362318840579711
+Accuracy Y : 0.2898550724637681
+Accuracy Z : 0.6666666666666666
+Accuracy Roll : 0.6811594202898551
+Accuracy Pitch : 0.6521739130434783
+Accuracy Yaw : 0.927536231884058
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9420289855072463
+Interval Accuracy Y : 0.9565217391304348
+Interval Accuracy Z : 0.9855072463768116
+Interval Accuracy Roll : 0.9855072463768116
+Interval Accuracy Pitch : 0.9855072463768116
+Interval Accuracy Yaw : 0.9855072463768116
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the first bin
+Task Length : 67
+Accuracy X : 0.6119402985074627
+Accuracy Y : 0.47761194029850745
+Accuracy Z : 0.7761194029850746
+Accuracy Roll : 0.7164179104477612
+Accuracy Pitch : 0.835820895522388
+Accuracy Yaw : 0.9402985074626866
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9850746268656716
+Interval Accuracy Y : 0.9850746268656716
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.9850746268656716
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the second bin
+Task Length : 64
+Accuracy X : 0.578125
+Accuracy Y : 0.484375
+Accuracy Z : 0.75
+Accuracy Roll : 0.703125
+Accuracy Pitch : 0.734375
+Accuracy Yaw : 0.90625
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.96875
+Interval Accuracy Y : 0.984375
+Interval Accuracy Z : 0.984375
+Interval Accuracy Roll : 0.984375
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.96875
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the first bin
+Task Length : 75
+Accuracy X : 0.4266666666666667
+Accuracy Y : 0.29333333333333333
+Accuracy Z : 0.76
+Accuracy Roll : 0.76
+Accuracy Pitch : 0.6933333333333334
+Accuracy Yaw : 0.9066666666666666
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9466666666666667
+Interval Accuracy Y : 0.9733333333333334
+Interval Accuracy Z : 0.9866666666666667
+Interval Accuracy Roll : 0.9866666666666667
+Interval Accuracy Pitch : 0.9733333333333334
+Interval Accuracy Yaw : 0.9866666666666667
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the third bin
+Task Length : 64
+Accuracy X : 0.546875
+Accuracy Y : 0.40625
+Accuracy Z : 0.859375
+Accuracy Roll : 0.78125
+Accuracy Pitch : 0.703125
+Accuracy Yaw : 0.8125
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.984375
+Interval Accuracy Y : 0.984375
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.984375
+Interval Accuracy Pitch : 0.984375
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the third bin
+Task Length : 74
+Accuracy X : 0.40540540540540543
+Accuracy Y : 0.2702702702702703
+Accuracy Z : 0.6486486486486487
+Accuracy Roll : 0.7162162162162162
+Accuracy Pitch : 0.6351351351351351
+Accuracy Yaw : 0.8513513513513513
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9459459459459459
+Interval Accuracy Y : 0.9594594594594594
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9864864864864865
+Interval Accuracy Pitch : 0.9864864864864865
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the second bin
+Task Length : 76
+Accuracy X : 0.35526315789473684
+Accuracy Y : 0.3026315789473684
+Accuracy Z : 0.5526315789473685
+Accuracy Roll : 0.6973684210526315
+Accuracy Pitch : 0.7894736842105263
+Accuracy Yaw : 0.868421052631579
+Accuracy Gripper : 0.9868421052631579
+Interval Accuracy X : 0.9605263157894737
+Interval Accuracy Y : 0.9736842105263158
+Interval Accuracy Z : 0.9736842105263158
+Interval Accuracy Roll : 0.9868421052631579
+Interval Accuracy Pitch : 0.9473684210526315
+Interval Accuracy Yaw : 0.9868421052631579
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the first bin
+Task Length : 73
+Accuracy X : 0.4246575342465753
+Accuracy Y : 0.3287671232876712
+Accuracy Z : 0.7123287671232876
+Accuracy Roll : 0.7534246575342466
+Accuracy Pitch : 0.726027397260274
+Accuracy Yaw : 0.8082191780821918
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9726027397260274
+Interval Accuracy Y : 0.9726027397260274
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9726027397260274
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 85
+Accuracy X : 0.4117647058823529
+Accuracy Y : 0.25882352941176473
+Accuracy Z : 0.8235294117647058
+Accuracy Roll : 0.7411764705882353
+Accuracy Pitch : 0.788235294117647
+Accuracy Yaw : 0.9294117647058824
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9882352941176471
+Interval Accuracy Y : 0.9882352941176471
+Interval Accuracy Z : 0.9882352941176471
+Interval Accuracy Roll : 0.9764705882352941
+Interval Accuracy Pitch : 0.9882352941176471
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the first bin
+Task Length : 67
+Accuracy X : 0.4925373134328358
+Accuracy Y : 0.40298507462686567
+Accuracy Z : 0.7014925373134329
+Accuracy Roll : 0.7164179104477612
+Accuracy Pitch : 0.582089552238806
+Accuracy Yaw : 0.7761194029850746
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9552238805970149
+Interval Accuracy Y : 0.9104477611940298
+Interval Accuracy Z : 0.9701492537313433
+Interval Accuracy Roll : 0.9701492537313433
+Interval Accuracy Pitch : 0.9552238805970149
+Interval Accuracy Yaw : 0.9701492537313433
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 79
+Accuracy X : 0.3924050632911392
+Accuracy Y : 0.45569620253164556
+Accuracy Z : 0.5443037974683544
+Accuracy Roll : 0.620253164556962
+Accuracy Pitch : 0.6329113924050633
+Accuracy Yaw : 0.9240506329113924
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9367088607594937
+Interval Accuracy Y : 0.9113924050632911
+Interval Accuracy Z : 0.9620253164556962
+Interval Accuracy Roll : 0.9493670886075949
+Interval Accuracy Pitch : 0.9493670886075949
+Interval Accuracy Yaw : 0.9620253164556962
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the third bin
+Task Length : 65
+Accuracy X : 0.49230769230769234
+Accuracy Y : 0.4153846153846154
+Accuracy Z : 0.7846153846153846
+Accuracy Roll : 0.7384615384615385
+Accuracy Pitch : 0.7384615384615385
+Accuracy Yaw : 0.8923076923076924
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9846153846153847
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9846153846153847
+Interval Accuracy Yaw : 0.9692307692307692
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 66
+Accuracy X : 0.5454545454545454
+Accuracy Y : 0.4696969696969697
+Accuracy Z : 0.7121212121212122
+Accuracy Roll : 0.7727272727272727
+Accuracy Pitch : 0.8636363636363636
+Accuracy Yaw : 0.8636363636363636
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9848484848484849
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the fourth bin
+Task Length : 67
+Accuracy X : 0.5074626865671642
+Accuracy Y : 0.43283582089552236
+Accuracy Z : 0.7611940298507462
+Accuracy Roll : 0.7611940298507462
+Accuracy Pitch : 0.8656716417910447
+Accuracy Yaw : 0.8507462686567164
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9850746268656716
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9850746268656716
+Interval Accuracy Yaw : 0.9850746268656716
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 74
+Accuracy X : 0.43243243243243246
+Accuracy Y : 0.40540540540540543
+Accuracy Z : 0.7837837837837838
+Accuracy Roll : 0.7432432432432432
+Accuracy Pitch : 0.7972972972972973
+Accuracy Yaw : 0.8378378378378378
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9864864864864865
+Interval Accuracy Y : 0.9459459459459459
+Interval Accuracy Z : 0.972972972972973
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.972972972972973
+Interval Accuracy Yaw : 0.9864864864864865
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the third bin
+Task Length : 64
+Accuracy X : 0.4375
+Accuracy Y : 0.359375
+Accuracy Z : 0.59375
+Accuracy Roll : 0.703125
+Accuracy Pitch : 0.65625
+Accuracy Yaw : 0.859375
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9375
+Interval Accuracy Y : 0.96875
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.96875
+Interval Accuracy Pitch : 0.96875
+Interval Accuracy Yaw : 0.984375
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the third bin
+Task Length : 65
+Accuracy X : 0.8307692307692308
+Accuracy Y : 0.6615384615384615
+Accuracy Z : 0.8
+Accuracy Roll : 0.8461538461538461
+Accuracy Pitch : 0.8307692307692308
+Accuracy Yaw : 0.8461538461538461
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9846153846153847
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 0.9846153846153847
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 68
+Accuracy X : 0.47058823529411764
+Accuracy Y : 0.22058823529411764
+Accuracy Z : 0.8529411764705882
+Accuracy Roll : 0.6911764705882353
+Accuracy Pitch : 0.6764705882352942
+Accuracy Yaw : 0.8235294117647058
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9852941176470589
+Interval Accuracy Y : 0.9705882352941176
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9852941176470589
+Interval Accuracy Pitch : 0.9705882352941176
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the second bin
+Task Length : 62
+Accuracy X : 0.6129032258064516
+Accuracy Y : 0.45161290322580644
+Accuracy Z : 0.7258064516129032
+Accuracy Roll : 0.6774193548387096
+Accuracy Pitch : 0.6774193548387096
+Accuracy Yaw : 0.8548387096774194
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9838709677419355
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.9838709677419355
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the first bin
+Task Length : 67
+Accuracy X : 0.582089552238806
+Accuracy Y : 0.47761194029850745
+Accuracy Z : 0.6865671641791045
+Accuracy Roll : 0.7910447761194029
+Accuracy Pitch : 0.746268656716418
+Accuracy Yaw : 0.8955223880597015
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9701492537313433
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9701492537313433
+Interval Accuracy Pitch : 0.9701492537313433
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 69
+Accuracy X : 0.4927536231884058
+Accuracy Y : 0.5362318840579711
+Accuracy Z : 0.6521739130434783
+Accuracy Roll : 0.6956521739130435
+Accuracy Pitch : 0.7246376811594203
+Accuracy Yaw : 0.9130434782608695
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9565217391304348
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 0.9855072463768116
+Interval Accuracy Roll : 0.9855072463768116
+Interval Accuracy Pitch : 0.9710144927536232
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the first bin
+Task Length : 64
+Accuracy X : 0.453125
+Accuracy Y : 0.375
+Accuracy Z : 0.734375
+Accuracy Roll : 0.84375
+Accuracy Pitch : 0.828125
+Accuracy Yaw : 0.90625
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.953125
+Interval Accuracy Y : 0.921875
+Interval Accuracy Z : 0.984375
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.984375
+Interval Accuracy Yaw : 0.984375
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 67
+Accuracy X : 0.47761194029850745
+Accuracy Y : 0.34328358208955223
+Accuracy Z : 0.6268656716417911
+Accuracy Roll : 0.7164179104477612
+Accuracy Pitch : 0.8059701492537313
+Accuracy Yaw : 0.8805970149253731
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9552238805970149
+Interval Accuracy Y : 0.9402985074626866
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9850746268656716
+Interval Accuracy Pitch : 0.9850746268656716
+Interval Accuracy Yaw : 0.9850746268656716
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 65
+Accuracy X : 0.6
+Accuracy Y : 0.4461538461538462
+Accuracy Z : 0.7384615384615385
+Accuracy Roll : 0.7538461538461538
+Accuracy Pitch : 0.676923076923077
+Accuracy Yaw : 0.8
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9846153846153847
+Interval Accuracy Y : 0.9384615384615385
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 0.9846153846153847
+Interval Accuracy Yaw : 0.9846153846153847
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the second bin
+Task Length : 62
+Accuracy X : 0.5483870967741935
+Accuracy Y : 0.4838709677419355
+Accuracy Z : 0.7741935483870968
+Accuracy Roll : 0.6935483870967742
+Accuracy Pitch : 0.6129032258064516
+Accuracy Yaw : 0.8387096774193549
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9516129032258065
+Interval Accuracy Y : 0.9516129032258065
+Interval Accuracy Z : 0.9838709677419355
+Interval Accuracy Roll : 0.9838709677419355
+Interval Accuracy Pitch : 0.9516129032258065
+Interval Accuracy Yaw : 0.9838709677419355
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 76
+Accuracy X : 0.5131578947368421
+Accuracy Y : 0.34210526315789475
+Accuracy Z : 0.7631578947368421
+Accuracy Roll : 0.7236842105263158
+Accuracy Pitch : 0.8552631578947368
+Accuracy Yaw : 0.9342105263157895
+Accuracy Gripper : 0.9868421052631579
+Interval Accuracy X : 0.9605263157894737
+Interval Accuracy Y : 0.9210526315789473
+Interval Accuracy Z : 0.9868421052631579
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9736842105263158
+Interval Accuracy Yaw : 0.9868421052631579
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 65
+Accuracy X : 0.5076923076923077
+Accuracy Y : 0.3384615384615385
+Accuracy Z : 0.6153846153846154
+Accuracy Roll : 0.6153846153846154
+Accuracy Pitch : 0.7230769230769231
+Accuracy Yaw : 0.8153846153846154
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9846153846153847
+Interval Accuracy Y : 0.9692307692307692
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the third bin
+Task Length : 65
+Accuracy X : 0.6153846153846154
+Accuracy Y : 0.5846153846153846
+Accuracy Z : 0.8615384615384616
+Accuracy Roll : 0.6923076923076923
+Accuracy Pitch : 0.7692307692307693
+Accuracy Yaw : 0.8153846153846154
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9692307692307692
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 0.9384615384615385
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the fourth bin
+Task Length : 74
+Accuracy X : 0.35135135135135137
+Accuracy Y : 0.28378378378378377
+Accuracy Z : 0.7027027027027027
+Accuracy Roll : 0.7702702702702703
+Accuracy Pitch : 0.8243243243243243
+Accuracy Yaw : 0.9459459459459459
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.972972972972973
+Interval Accuracy Y : 0.9864864864864865
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9864864864864865
+Interval Accuracy Pitch : 0.9864864864864865
+Interval Accuracy Yaw : 0.9864864864864865
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the second bin
+Task Length : 62
+Accuracy X : 0.5645161290322581
+Accuracy Y : 0.41935483870967744
+Accuracy Z : 0.5806451612903226
+Accuracy Roll : 0.7258064516129032
+Accuracy Pitch : 0.6774193548387096
+Accuracy Yaw : 0.8387096774193549
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.967741935483871
+Interval Accuracy Y : 0.9516129032258065
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9516129032258065
+Interval Accuracy Pitch : 0.967741935483871
+Interval Accuracy Yaw : 0.9838709677419355
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 69
+Accuracy X : 0.5072463768115942
+Accuracy Y : 0.4782608695652174
+Accuracy Z : 0.6956521739130435
+Accuracy Roll : 0.782608695652174
+Accuracy Pitch : 0.7681159420289855
+Accuracy Yaw : 0.8260869565217391
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9710144927536232
+Interval Accuracy Y : 0.9855072463768116
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9710144927536232
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 73
+Accuracy X : 0.5068493150684932
+Accuracy Y : 0.3013698630136986
+Accuracy Z : 0.6986301369863014
+Accuracy Roll : 0.6986301369863014
+Accuracy Pitch : 0.726027397260274
+Accuracy Yaw : 0.9178082191780822
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9726027397260274
+Interval Accuracy Y : 0.958904109589041
+Interval Accuracy Z : 0.9726027397260274
+Interval Accuracy Roll : 0.9726027397260274
+Interval Accuracy Pitch : 0.9726027397260274
+Interval Accuracy Yaw : 0.9863013698630136
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 68
+Accuracy X : 0.5735294117647058
+Accuracy Y : 0.4411764705882353
+Accuracy Z : 0.7941176470588235
+Accuracy Roll : 0.75
+Accuracy Pitch : 0.8088235294117647
+Accuracy Yaw : 0.8970588235294118
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9264705882352942
+Interval Accuracy Y : 0.9852941176470589
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9852941176470589
+Interval Accuracy Pitch : 0.9705882352941176
+Interval Accuracy Yaw : 0.9705882352941176
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 61
+Accuracy X : 0.6721311475409836
+Accuracy Y : 0.6229508196721312
+Accuracy Z : 0.8032786885245902
+Accuracy Roll : 0.9344262295081968
+Accuracy Pitch : 0.8360655737704918
+Accuracy Yaw : 0.9180327868852459
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9836065573770492
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.9836065573770492
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 63
+Accuracy X : 0.746031746031746
+Accuracy Y : 0.5555555555555556
+Accuracy Z : 0.7936507936507936
+Accuracy Roll : 0.8253968253968254
+Accuracy Pitch : 0.6984126984126984
+Accuracy Yaw : 0.8571428571428571
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9841269841269841
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9841269841269841
+Interval Accuracy Yaw : 0.9841269841269841
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 67
+Accuracy X : 0.5373134328358209
+Accuracy Y : 0.40298507462686567
+Accuracy Z : 0.746268656716418
+Accuracy Roll : 0.7611940298507462
+Accuracy Pitch : 0.8059701492537313
+Accuracy Yaw : 0.8805970149253731
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9701492537313433
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the third bin
+Task Length : 63
+Accuracy X : 0.6031746031746031
+Accuracy Y : 0.4126984126984127
+Accuracy Z : 0.7142857142857143
+Accuracy Roll : 0.6349206349206349
+Accuracy Pitch : 0.6349206349206349
+Accuracy Yaw : 0.8412698412698413
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9682539682539683
+Interval Accuracy Y : 0.9841269841269841
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9682539682539683
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.9682539682539683
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 67
+Accuracy X : 0.5671641791044776
+Accuracy Y : 0.26865671641791045
+Accuracy Z : 0.6865671641791045
+Accuracy Roll : 0.6716417910447762
+Accuracy Pitch : 0.6865671641791045
+Accuracy Yaw : 0.9104477611940298
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9552238805970149
+Interval Accuracy Y : 0.9701492537313433
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9552238805970149
+Interval Accuracy Pitch : 0.9402985074626866
+Interval Accuracy Yaw : 0.9850746268656716
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the fourth bin
+Task Length : 68
+Accuracy X : 0.5
+Accuracy Y : 0.5
+Accuracy Z : 0.5882352941176471
+Accuracy Roll : 0.7647058823529411
+Accuracy Pitch : 0.7794117647058824
+Accuracy Yaw : 0.9411764705882353
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9852941176470589
+Interval Accuracy Y : 0.9705882352941176
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9705882352941176
+Interval Accuracy Yaw : 0.9852941176470589
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the second bin
+Task Length : 59
+Accuracy X : 0.5423728813559322
+Accuracy Y : 0.423728813559322
+Accuracy Z : 0.6610169491525424
+Accuracy Roll : 0.6949152542372882
+Accuracy Pitch : 0.6949152542372882
+Accuracy Yaw : 0.8813559322033898
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9661016949152542
+Interval Accuracy Y : 0.9661016949152542
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9830508474576272
+Interval Accuracy Pitch : 0.9830508474576272
+Interval Accuracy Yaw : 0.9830508474576272
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the fourth bin
+Task Length : 81
+Accuracy X : 0.4567901234567901
+Accuracy Y : 0.37037037037037035
+Accuracy Z : 0.8024691358024691
+Accuracy Roll : 0.7777777777777778
+Accuracy Pitch : 0.7407407407407407
+Accuracy Yaw : 0.9506172839506173
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9876543209876543
+Interval Accuracy Y : 0.9259259259259259
+Interval Accuracy Z : 0.9876543209876543
+Interval Accuracy Roll : 0.9876543209876543
+Interval Accuracy Pitch : 0.9753086419753086
+Interval Accuracy Yaw : 0.9753086419753086
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 74
+Accuracy X : 0.3783783783783784
+Accuracy Y : 0.4189189189189189
+Accuracy Z : 0.7837837837837838
+Accuracy Roll : 0.7702702702702703
+Accuracy Pitch : 0.7432432432432432
+Accuracy Yaw : 0.9459459459459459
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.972972972972973
+Interval Accuracy Y : 0.918918918918919
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.972972972972973
+Interval Accuracy Pitch : 0.972972972972973
+Interval Accuracy Yaw : 0.972972972972973
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 67
+Accuracy X : 0.5522388059701493
+Accuracy Y : 0.34328358208955223
+Accuracy Z : 0.6865671641791045
+Accuracy Roll : 0.6865671641791045
+Accuracy Pitch : 0.7313432835820896
+Accuracy Yaw : 0.7910447761194029
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9552238805970149
+Interval Accuracy Y : 0.9701492537313433
+Interval Accuracy Z : 0.9850746268656716
+Interval Accuracy Roll : 0.9701492537313433
+Interval Accuracy Pitch : 0.9701492537313433
+Interval Accuracy Yaw : 0.9850746268656716
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the third bin
+Task Length : 73
+Accuracy X : 0.3561643835616438
+Accuracy Y : 0.2602739726027397
+Accuracy Z : 0.5205479452054794
+Accuracy Roll : 0.5068493150684932
+Accuracy Pitch : 0.6164383561643836
+Accuracy Yaw : 0.958904109589041
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.863013698630137
+Interval Accuracy Y : 0.958904109589041
+Interval Accuracy Z : 0.9863013698630136
+Interval Accuracy Roll : 0.958904109589041
+Interval Accuracy Pitch : 0.958904109589041
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the first bin
+Task Length : 88
+Accuracy X : 0.45454545454545453
+Accuracy Y : 0.4431818181818182
+Accuracy Z : 0.7840909090909091
+Accuracy Roll : 0.7613636363636364
+Accuracy Pitch : 0.75
+Accuracy Yaw : 0.9204545454545454
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9659090909090909
+Interval Accuracy Y : 0.9659090909090909
+Interval Accuracy Z : 0.9886363636363636
+Interval Accuracy Roll : 0.9886363636363636
+Interval Accuracy Pitch : 0.9772727272727273
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the first bin
+Task Length : 65
+Accuracy X : 0.5846153846153846
+Accuracy Y : 0.38461538461538464
+Accuracy Z : 0.676923076923077
+Accuracy Roll : 0.7692307692307693
+Accuracy Pitch : 0.7846153846153846
+Accuracy Yaw : 0.8615384615384616
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.9846153846153847
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 0.9692307692307692
+Interval Accuracy Yaw : 0.9846153846153847
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the third bin
+Task Length : 65
+Accuracy X : 0.5538461538461539
+Accuracy Y : 0.4307692307692308
+Accuracy Z : 0.7384615384615385
+Accuracy Roll : 0.7846153846153846
+Accuracy Pitch : 0.8
+Accuracy Yaw : 0.9384615384615385
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9384615384615385
+Interval Accuracy Y : 0.9692307692307692
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9692307692307692
+Interval Accuracy Yaw : 0.9846153846153847
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 61
+Accuracy X : 0.5737704918032787
+Accuracy Y : 0.4262295081967213
+Accuracy Z : 0.7704918032786885
+Accuracy Roll : 0.5901639344262295
+Accuracy Pitch : 0.6065573770491803
+Accuracy Yaw : 0.8852459016393442
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9508196721311475
+Interval Accuracy Y : 0.9508196721311475
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9836065573770492
+Interval Accuracy Pitch : 0.9672131147540983
+Interval Accuracy Yaw : 0.9836065573770492
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick green box and place it into the first bin
+Task Length : 89
+Accuracy X : 0.3707865168539326
+Accuracy Y : 0.38202247191011235
+Accuracy Z : 0.5393258426966292
+Accuracy Roll : 0.797752808988764
+Accuracy Pitch : 0.7078651685393258
+Accuracy Yaw : 0.9325842696629213
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9325842696629213
+Interval Accuracy Y : 0.9213483146067416
+Interval Accuracy Z : 0.9775280898876404
+Interval Accuracy Roll : 0.9887640449438202
+Interval Accuracy Pitch : 0.9775280898876404
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 64
+Accuracy X : 0.6875
+Accuracy Y : 0.40625
+Accuracy Z : 0.71875
+Accuracy Roll : 0.890625
+Accuracy Pitch : 0.703125
+Accuracy Yaw : 0.78125
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 0.984375
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.984375
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 0.984375
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 63
+Accuracy X : 0.7301587301587301
+Accuracy Y : 0.5555555555555556
+Accuracy Z : 0.7936507936507936
+Accuracy Roll : 0.746031746031746
+Accuracy Pitch : 0.7619047619047619
+Accuracy Yaw : 0.8253968253968254
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9841269841269841
+Interval Accuracy Y : 0.9841269841269841
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9841269841269841
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the fourth bin
+Task Length : 74
+Accuracy X : 0.4864864864864865
+Accuracy Y : 0.32432432432432434
+Accuracy Z : 0.7567567567567568
+Accuracy Roll : 0.7432432432432432
+Accuracy Pitch : 0.7837837837837838
+Accuracy Yaw : 0.918918918918919
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9594594594594594
+Interval Accuracy Y : 0.972972972972973
+Interval Accuracy Z : 0.9864864864864865
+Interval Accuracy Roll : 0.972972972972973
+Interval Accuracy Pitch : 0.9594594594594594
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the first bin
+Task Length : 67
+Accuracy X : 0.582089552238806
+Accuracy Y : 0.373134328358209
+Accuracy Z : 0.6716417910447762
+Accuracy Roll : 0.6865671641791045
+Accuracy Pitch : 0.7014925373134329
+Accuracy Yaw : 0.8656716417910447
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9701492537313433
+Interval Accuracy Y : 0.8507462686567164
+Interval Accuracy Z : 0.9552238805970149
+Interval Accuracy Roll : 0.9850746268656716
+Interval Accuracy Pitch : 0.9850746268656716
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the second bin
+Task Length : 65
+Accuracy X : 0.6153846153846154
+Accuracy Y : 0.5076923076923077
+Accuracy Z : 0.7076923076923077
+Accuracy Roll : 0.7846153846153846
+Accuracy Pitch : 0.7538461538461538
+Accuracy Yaw : 0.8923076923076924
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9692307692307692
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 0.9846153846153847
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the third bin
+Task Length : 64
+Accuracy X : 0.71875
+Accuracy Y : 0.75
+Accuracy Z : 0.703125
+Accuracy Roll : 0.875
+Accuracy Pitch : 0.859375
+Accuracy Yaw : 0.890625
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.953125
+Interval Accuracy Y : 0.984375
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 1.0
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick red box and place it into the second bin
+Task Length : 61
+Accuracy X : 0.5245901639344263
+Accuracy Y : 0.4098360655737705
+Accuracy Z : 0.8360655737704918
+Accuracy Roll : 0.6721311475409836
+Accuracy Pitch : 0.7213114754098361
+Accuracy Yaw : 0.8360655737704918
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9672131147540983
+Interval Accuracy Y : 0.9672131147540983
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9836065573770492
+Interval Accuracy Pitch : 0.9836065573770492
+Interval Accuracy Yaw : 0.9836065573770492
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the first bin
+Task Length : 76
+Accuracy X : 0.34210526315789475
+Accuracy Y : 0.39473684210526316
+Accuracy Z : 0.8026315789473685
+Accuracy Roll : 0.7236842105263158
+Accuracy Pitch : 0.75
+Accuracy Yaw : 0.7894736842105263
+Accuracy Gripper : 1.0
+Interval Accuracy X : 1.0
+Interval Accuracy Y : 1.0
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.9868421052631579
+Interval Accuracy Pitch : 0.9868421052631579
+Interval Accuracy Yaw : 0.9868421052631579
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the fourth bin
+Task Length : 84
+Accuracy X : 0.42857142857142855
+Accuracy Y : 0.32142857142857145
+Accuracy Z : 0.7976190476190477
+Accuracy Roll : 0.7976190476190477
+Accuracy Pitch : 0.7976190476190477
+Accuracy Yaw : 0.8809523809523809
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9761904761904762
+Interval Accuracy Y : 0.9761904761904762
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 1.0
+Interval Accuracy Pitch : 0.9761904761904762
+Interval Accuracy Yaw : 0.9761904761904762
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick yellow box and place it into the fourth bin
+Task Length : 74
+Accuracy X : 0.5675675675675675
+Accuracy Y : 0.40540540540540543
+Accuracy Z : 0.7162162162162162
+Accuracy Roll : 0.7432432432432432
+Accuracy Pitch : 0.8243243243243243
+Accuracy Yaw : 0.8918918918918919
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.972972972972973
+Interval Accuracy Y : 0.9864864864864865
+Interval Accuracy Z : 1.0
+Interval Accuracy Roll : 0.972972972972973
+Interval Accuracy Pitch : 0.972972972972973
+Interval Accuracy Yaw : 0.9864864864864865
+Interval Accuracy Gripper : 1.0
+
+
+Task : Pick blue box and place it into the first bin
+Task Length : 65
+Accuracy X : 0.5230769230769231
+Accuracy Y : 0.5230769230769231
+Accuracy Z : 0.6307692307692307
+Accuracy Roll : 0.7846153846153846
+Accuracy Pitch : 0.676923076923077
+Accuracy Yaw : 0.8923076923076924
+Accuracy Gripper : 1.0
+Interval Accuracy X : 0.9846153846153847
+Interval Accuracy Y : 0.9538461538461539
+Interval Accuracy Z : 0.9846153846153847
+Interval Accuracy Roll : 0.9846153846153847
+Interval Accuracy Pitch : 0.9692307692307692
+Interval Accuracy Yaw : 1.0
+Interval Accuracy Gripper : 1.0
+
+
+Overall Accuracy X : 0.5086132644272179
+Overall Accuracy Y : 0.412001148435257
+Overall Accuracy Z : 0.7143267298306057
+Overall Accuracy Roll : 0.7378696525983348
+Overall Accuracy Pitch : 0.7407407407407407
+Overall Accuracy Yaw : 0.8758254378409417
+Overall Accuracy Gripper : 0.9987080103359173
+Overall Interval Accuracy X : 0.966838931955211
+Overall Interval Accuracy Y : 0.9655469422911284
+Overall Interval Accuracy Z : 0.9923916164226242
+Overall Interval Accuracy Roll : 0.9867929945449325
+Overall Interval Accuracy Pitch : 0.977892621303474
+Overall Interval Accuracy Yaw : 0.9893769738730979
+Overall Interval Accuracy Gripper : 0.9991386735572783

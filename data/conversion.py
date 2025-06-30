@@ -15,6 +15,7 @@ from torchvision.io import read_image
 import torchvision.transforms as transforms
 import sys
 from torchvision.transforms.functional import resized_crop
+import robosuite.utils.transform_utils as T
 sys.path.insert(0,'/user/mspremulli/Language-Conditioned-Imitation-Learning/')
 sys.path.insert(0,'/user/mspremulli/Multi-Task-LFD-Training-Framework/')
 
@@ -122,6 +123,7 @@ def dataset_conversion(config):
                   #Extracting observations data from the trajectory
                   
                   for i in range(trajectory_length):
+
                     
                     data = trajectory[i] # Data is acessed as index based collection
 
@@ -129,6 +131,7 @@ def dataset_conversion(config):
                     
                     image = observation['camera_front_image'] # 200, 360, 3
                 
+                    
                     """
                     pilImg = transforms.ToPILImage()(image)
                     pilImg.save("before_cropping_image_timestep_{}.png".format(i))
@@ -169,79 +172,100 @@ def dataset_conversion(config):
 
                     #Test Action. Ask to Francesco which action to use
                     
-                    action_vector = data["action"]
-                    # print("Current Action Timestep {} : {}".format(i,action_vector))
-
-                    """"
-                    # Delta Computation
-                    #For the first action of each trajectory, the delta is computer with the next action.
-                    #For all the others is computed with the previous action
-                    if i == 0 :
-
-                      next_action_vector = trajectory[i + 1]['action']
-                      # print("Next Action Vector Timestep {} : {}".format(i,next_action_vector))
-                      action_vector = action_vector - next_action_vector 
-                      # print("New Action vector timestep {} : {}".format(i,action_vector))
-                      # If action_vector gripper state is 0 (closed) and previous action gripper state is 1(open), the gripper state will assusme a value of -1.
-                      # This happen when the object is picked.
-                      if action_vector[6] == -1:
-                        action_vector[6] = 1
-
-                    if i > 0 :
-                      
-                      previous_action_vector = trajectory[i - 1]["action"]
-                      # print("Previous Action Vector Timestep {} : {}".format(i-1,previous_action_vector))
-                      action_vector = action_vector - previous_action_vector
-                      print("Delta : {}".format(action_vector))
-
-                      # If action_vector gripper state is 0 (closed) and previous action gripper state is 1(open), the gripper state will assusme a value of -1.
-                      # This happen when the object is picked.
-                      if action_vector[6] == -1:
-                        action_vector[6] = 1
-
-                      # print("New Action Vector Timestep {} : {}".format(i,action_vector))
-
-                    """
-
-                    if action_vector[0] < min_x :
-                      min_x = action_vector[0]
-                    if action_vector[0] > max_x :
-                      max_x = action_vector[0]
-
-                    if action_vector[1] < min_y :
-                      min_y = action_vector[1]
-                    if action_vector[1] > max_y :
-                      max_y = action_vector[1]
-
-                    if action_vector[2] < min_z :
-                      min_z = action_vector[2]
-                    if action_vector[2] > max_z :
-                      max_z = action_vector[2]
-
-                    if action_vector[3] < min_xr :
-                      min_xr = action_vector[3]
-                    if action_vector[3] > max_xr :
-                      max_xr = action_vector[3]
-
-                    if action_vector[4] < min_yr :
-                      min_yr = action_vector[4]
-                    if action_vector[4] > max_yr :
-                      max_yr = action_vector[4]
-
-                    if action_vector[5] < min_zr :
-                      min_zr = action_vector[5]
-                    if action_vector[5] > max_zr :
-                      max_zr = action_vector[5]
-
-                    action_world_vector = action_vector[0 : 3]
-                    action_rotation_delta = action_vector[3 : 6]
-                    action_gripper = action_vector[6 : ]
 
                     
-                    obs_dict = {'observation' : {'image' : cropped_image, 'natural_language_embedding' : natural_language_embedding, 'natural_language_instruction' : language_instruction}, 'action' : {'gripper_closedness_action' : action_gripper, 'rotation_delta' : action_rotation_delta, 'world_vector' : action_world_vector}}
-                    traj_dict["steps"].append(obs_dict)
-                  
-                  torch.save(traj_dict, save_path + "traj{}".format(traj_index))
+                    # Delta Computation
+
+                    if i == trajectory_length - 1:
+                       
+                       delta_eef_pos = np.zeros(3)
+                       delta_eef_axisangle = np.zeros(3)
+                       gripper = np.array([0])            
+                    else :
+                      
+                      current_eef_pos = data['obs']['eef_pos']
+                      current_eef_quat = data['obs']['eef_quat']
+
+                      next_eef_pos = trajectory[i + 1]['obs']['eef_pos']
+                      next_eef_quat = trajectory[i + 1]['obs']['eef_quat']
+
+                      gripper = trajectory[i + 1]['action'][6]
+
+                      if gripper == -1:
+                        gripper = np.array([0])
+                      else:
+                        gripper = np.array([1])
+
+                      delta_eef_pos = next_eef_pos - current_eef_pos
+
+                      delta_eef_quat = T.quat_distance(next_eef_quat, current_eef_quat)
+                      delta_eef_axisangle = T.quat2axisangle(delta_eef_quat)
+
+                      print("Current eef quat Timestep {} : {}".format(i, current_eef_quat))
+                      print("Next eef quat Timestep {} : {}".format(i + 1, next_eef_quat))
+                      print("Delta eef quat Timestep {} : {}".format(i, delta_eef_quat))
+
+                      quat = T.axisangle2quat(delta_eef_axisangle)
+
+                      print("Recomputed quat Timestep {} : {}".format(i, quat))
+                      next_quat = T.quat_multiply(quat, current_eef_quat)
+                      print("Next quat Timestep {} : {}".format(i + 1, next_quat))
+
+
+                      if i == 30:
+                        print(ahahah)
+                      
+                      """
+                      if delta_eef_pos[0] < 0:
+
+                        print("Current eef pos Timestep {} : {}".format(i, current_eef_pos))
+                        print("Next eef pos Timestep {} : {}".format(i + 1, next_eef_pos))
+                        print("Delta eef pos Timestep {} : {}".format(i, delta_eef_pos))
+                        print("Current eef quat Timestep {} : {}".format(i, current_eef_quat))
+                        print("Next eef quat Timestep {} : {}".format(i + 1, next_eef_quat))
+                        print("Delta eef quat Timestep {} : {}".format(i, delta_eef_quat))
+                        print("Delta eef axisangle Timestep {} : {}".format(i, delta_eef_axisangle))
+                        print("Gripper Timestep {} : {}".format(i, gripper))
+                      
+                      """
+
+                    obs_dict = {'observation' : {'image' : cropped_image, 'natural_language_embedding' : natural_language_embedding, 'natural_language_instruction' : language_instruction}, 'action' : {'gripper_closedness_action' : gripper, 'rotation_delta' : delta_eef_axisangle, 'world_vector' : delta_eef_pos}}
+                    traj_dict['steps'].append(obs_dict)
+
+                    
+                    if delta_eef_pos[0] < min_x:
+                      min_x = delta_eef_pos[0]
+                    if delta_eef_pos[0] > max_x:
+                      max_x = delta_eef_pos[0]
+                    if delta_eef_pos[1] < min_y:
+                      min_y = delta_eef_pos[1]
+                    if delta_eef_pos[1] > max_y:
+                      max_y = delta_eef_pos[1]
+                    if delta_eef_pos[2] < min_z:
+                      min_z = delta_eef_pos[2]
+                    if delta_eef_pos[2] > max_z:
+                      max_z = delta_eef_pos[2]
+                    if delta_eef_axisangle[0] < min_xr:
+                      min_xr = delta_eef_axisangle[0]
+                    if delta_eef_axisangle[0] > max_xr:
+                      max_xr = delta_eef_axisangle[0]
+                    if delta_eef_axisangle[1] < min_yr:
+                      min_yr = delta_eef_axisangle[1]
+                    if delta_eef_axisangle[1] > max_yr:
+                      max_yr = delta_eef_axisangle[1]
+                    if delta_eef_axisangle[2] < min_zr:
+                      min_zr = delta_eef_axisangle[2]
+                    if delta_eef_axisangle[2] > max_zr:
+                      max_zr = delta_eef_axisangle[2]
+
+
+                    
+
+                  """
+                  with open(save_path + 'traj{}.pkl'.format(traj_index), 'wb') as f:
+                    pickle.dump(traj_dict, f, protocol=pickle.HIGHEST_PROTOCOL)
+                  """
+
                   traj_index = traj_index + 1
                   
           
