@@ -66,7 +66,7 @@ class CustomSampler2(Sampler):
                         terminated_trajectories_sampled_index = next(terminated_trajectories_sampler_iterable)
                         terminated_trajectories_sampled = terminated_trajectories_to_sample[terminated_trajectories_sampled_index]
 
-                        observations_list = self._range_observations[terminated_trajectories_sampled][30:] # More placing observations
+                        observations_list = self._range_observations[terminated_trajectories_sampled]
                         observation_sampler = RandomSampler(observations_list, replacement = False)
                         observation_sampler_iterable = iter(observation_sampler)
                         observation_index = next(observation_sampler_iterable)

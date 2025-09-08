@@ -180,7 +180,8 @@ def dataset_conversion(config):
                        
                        delta_eef_pos = np.zeros(3)
                        delta_eef_axisangle = np.zeros(3)
-                       gripper = np.array([0])            
+                       gripper = np.array([0]) 
+
                     else :
                       
                       current_eef_pos = data['obs']['eef_pos']
@@ -201,6 +202,10 @@ def dataset_conversion(config):
                       delta_eef_quat = T.quat_distance(next_eef_quat, current_eef_quat)
                       delta_eef_axisangle = T.quat2axisangle(delta_eef_quat)
 
+                      print("Timestep {} :".format(i))
+                      print("Delta eef pos : {}".format(delta_eef_pos))
+
+                      """
                       print("Current eef quat Timestep {} : {}".format(i, current_eef_quat))
                       print("Next eef quat Timestep {} : {}".format(i + 1, next_eef_quat))
                       print("Delta eef quat Timestep {} : {}".format(i, delta_eef_quat))
@@ -210,24 +215,10 @@ def dataset_conversion(config):
                       print("Recomputed quat Timestep {} : {}".format(i, quat))
                       next_quat = T.quat_multiply(quat, current_eef_quat)
                       print("Next quat Timestep {} : {}".format(i + 1, next_quat))
-
-
-                      if i == 30:
-                        print(ahahah)
-                      
                       """
-                      if delta_eef_pos[0] < 0:
 
-                        print("Current eef pos Timestep {} : {}".format(i, current_eef_pos))
-                        print("Next eef pos Timestep {} : {}".format(i + 1, next_eef_pos))
-                        print("Delta eef pos Timestep {} : {}".format(i, delta_eef_pos))
-                        print("Current eef quat Timestep {} : {}".format(i, current_eef_quat))
-                        print("Next eef quat Timestep {} : {}".format(i + 1, next_eef_quat))
-                        print("Delta eef quat Timestep {} : {}".format(i, delta_eef_quat))
-                        print("Delta eef axisangle Timestep {} : {}".format(i, delta_eef_axisangle))
-                        print("Gripper Timestep {} : {}".format(i, gripper))
                       
-                      """
+
 
                     obs_dict = {'observation' : {'image' : cropped_image, 'natural_language_embedding' : natural_language_embedding, 'natural_language_instruction' : language_instruction}, 'action' : {'gripper_closedness_action' : gripper, 'rotation_delta' : delta_eef_axisangle, 'world_vector' : delta_eef_pos}}
                     traj_dict['steps'].append(obs_dict)
@@ -261,10 +252,10 @@ def dataset_conversion(config):
 
                     
 
-                  """
+                  print(aaa)
                   with open(save_path + 'traj{}.pkl'.format(traj_index), 'wb') as f:
                     pickle.dump(traj_dict, f, protocol=pickle.HIGHEST_PROTOCOL)
-                  """
+                  
 
                   traj_index = traj_index + 1
                   

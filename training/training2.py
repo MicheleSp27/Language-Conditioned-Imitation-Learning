@@ -7,7 +7,7 @@ sys.path.insert(0,'/user/mspremulli/Language-Conditioned-Imitation-Learning/')
 
 from model.transformer_network import TransformerNetwork
 from model.utils import batched_space_sampler,np_to_tensor
-from data.dataset2 import CustomDataset2
+from data.dataset3 import CustomDataset3
 from data.sampler2 import CustomSampler2
 import torch
 import numpy as np 
@@ -98,18 +98,13 @@ def training_procedure(config):
   # Adam is the optimizer used in the training test from the original work
   optimizer = torch.optim.AdamW(robotic_transformer_model.parameters())
 
-  # wandb.init(project = "RT-1 No Pretraining Final Action Space Sampler Changed Simulated Training New Dataset More Placing", entity = "m-spremulli1-universit-degli-studi-di-salerno")
+  wandb.init(project = "RT-1 No Pretraining Final Action Space Sampler Changed Simulated Training New Dataset More Placing Different DataLoader", entity = "m-spremulli1-universit-degli-studi-di-salerno")
   
-
   actions = {}
   for epoch in range(epochs - starting_epoch):
 
     loss_sum = 0
     batch = 1
-    if epoch == 1:
-      print(AHHHHHH)
-      print("Placing actions : {}".format(dataset_robotic._placing))
-      print("Picking actions : {}".format(dataset_robotic._picking))
 
     print("Epoch : {}".format(epoch + 1 + starting_epoch))
 
@@ -117,9 +112,7 @@ def training_procedure(config):
     for samples in dataloader_robotic:
 
       images, natural_language_embedding, action_gripper, action_x_axis, action_y_axis, action_z_axis, action_roll, action_pitch, action_yaw = samples
-      batch = batch + 1
-      print("Batch : {}".format(batch))
-      """
+      
       optimizer.zero_grad()
 
       actions['gripper_closedness_action'] = action_gripper.to(device)
@@ -176,7 +169,7 @@ def training_procedure(config):
     
     wandb.log({"loss_epoch" : loss_sum/batch})
     wandb.save("training_plot.pth")
-"""
+
     
 
 if __name__ == "__main__":

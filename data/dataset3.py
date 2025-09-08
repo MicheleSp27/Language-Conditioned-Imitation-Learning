@@ -1,3 +1,5 @@
+#This dataset class allows to have inside a batch the same number of placing and picking samples.
+
 from torch.utils.data import Dataset
 import torch 
 import numpy as np
@@ -9,7 +11,7 @@ from torchvision.transforms import InterpolationMode, functional
 from torchvision.transforms import ToTensor
 from PIL import Image
 
-class CustomDataset2(Dataset):
+class CustomDataset3(Dataset):
 
     def __init__(self, data_path, time_sequence_length = 6):
         self._data_path = data_path  # Path to the dataset
@@ -22,9 +24,20 @@ class CustomDataset2(Dataset):
         trajectory_id = 0  # Trajectory counter
         number_of_trajectories = len(os.listdir(self._data_path)) # Number of trajectories
         set_of_trajectories = 0 # Increased after 50 trajectories
+
+        # lenghts = 0
     
 
         for i in range(number_of_trajectories):
+
+            placing = False
+
+            """
+            if i == 3:
+                print("STOP!")
+                break
+            """
+            
             
             # traj_path = data_path + "traj{}".format(i)
             # data = torch.load(traj_path)
@@ -32,32 +45,68 @@ class CustomDataset2(Dataset):
                 data = pickle.load(f)
             episode = data["steps"]
 
-            if i % 50 == 0:
-                set_of_trajectories = set_of_trajectories + 1
+            if i % 100 == 0:
+                if i == 0:
+                    set_of_trajectories = 1
+                else:
+                    set_of_trajectories = set_of_trajectories + 2
 
 
             if self._number_of_obs_for_trajectory.get(set_of_trajectories, 0) == 0:
-                self._number_of_obs_for_trajectory[set_of_trajectories] = len(episode)
+                self._number_of_obs_for_trajectory[set_of_trajectories] = 0
                 self._range_observations[set_of_trajectories] = []
-            else:
-                self._number_of_obs_for_trajectory[set_of_trajectories] += len(episode)
-                
+
+            if self._number_of_obs_for_trajectory.get(set_of_trajectories + 1, 0) == 0:
+                self._number_of_obs_for_trajectory[set_of_trajectories + 1] = 0
+                self._range_observations[set_of_trajectories + 1] = []
+ 
+            # lenghts += len(episode)
 
             for observation_index in range(len(episode)):
 
-                self._indexs[observation_id] = (trajectory_id, observation_index)
-                self._range_observations[set_of_trajectories].append(observation_id)
-                observation_id = observation_id + 1
+                if episode[observation_index]["action"]["gripper_closedness_action"][0] == 1:
+                    placing = True
+                
+                if placing == False :
+                    #Picking Phase
+                    self._indexs[observation_id] = (trajectory_id, observation_index)
+                    self._range_observations[set_of_trajectories].append(observation_id)
+                    observation_id = observation_id + 1
+                else :
+                    #Placing Phase
+                    self._indexs[observation_id] = (trajectory_id, observation_index)
+                    self._range_observations[set_of_trajectories + 1].append(observation_id)
+                    observation_id = observation_id + 1
 
             trajectory_id = trajectory_id + 1
 
+            # Updating picking samples
+            total_picking_samples = len(self._range_observations[set_of_trajectories])
+            added_picking_samples = self._number_of_obs_for_trajectory[set_of_trajectories]
+            non_added_picking_samples = total_picking_samples - added_picking_samples
+            self._number_of_obs_for_trajectory[set_of_trajectories] += non_added_picking_samples
+            # Updating placing samples
+            total_placing_samples = len(self._range_observations[set_of_trajectories + 1])
+            added_placing_samples = self._number_of_obs_for_trajectory[set_of_trajectories + 1]
+            non_added_placing_samples = total_placing_samples - added_placing_samples
+            self._number_of_obs_for_trajectory[set_of_trajectories + 1] += non_added_placing_samples
+            """
+            print("Number of samples in the trajectory {}".format(len(episode)))
+            print("Picking samples in the trajectory {} : {}".format(i,non_added_picking_samples))
+            print("Placing samples in the trajectory {} : {}".format(i, non_added_placing_samples))
+            print("List of picking samples : {}".format(self._range_observations[set_of_trajectories]))
+            print("List of placing samples : {}".format(self._range_observations[set_of_trajectories + 1]))
+            print("Total Number of samples seen {}".format(lenghts))
+            print("Total Number of picking samples {}".format(self._number_of_obs_for_trajectory[set_of_trajectories]))
+            print("Total Number of placing samples {}".format(self._number_of_obs_for_trajectory[set_of_trajectories + 1]))
+            
         for i in range(1, 32+1):
 
             low_bound = self._range_observations[i][0]
             high_bound = self._range_observations[i][-1]
 
             print("For trajectory {} the lower bound is {} while the higher bound is {}".format(i, low_bound, high_bound))
-
+        """
         """
         for i in range(1,32+1):
             number_of_observations = self._number_of_obs_for_trajectory[i]
@@ -179,5 +228,5 @@ class CustomDataset2(Dataset):
 
 
 if __name__ == "__main__":
-    dataset = CustomDataset2("/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta2/")
+    dataset = CustomDataset3("/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta2/")
     

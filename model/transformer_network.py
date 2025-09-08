@@ -547,7 +547,7 @@ class TransformerNetwork(nn.Module):
         # preprocess image
         image = image.view((b*input_t, c, h, w)) # image is already tensor and its range is [0,1]
         image = convert_dtype_and_crop_images(image)
-        image =image.view((b, input_t, c, h, w))
+        image = image.view((b, input_t, c, h, w))
 
 
 

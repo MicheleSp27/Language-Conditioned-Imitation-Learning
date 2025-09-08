@@ -81,18 +81,18 @@ rt1_dataset:
   
 
 mivia_simulated_dataset:
-    _target_ : training2.CustomDataset2
+    _target_ : training2.CustomDataset3
     data_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta2/"
     time_sequence_length : 6
     
 
 training:
-   epochs : 150
+   epochs : 500
    batch_size : 32
-   num_workers : 0
+   num_workers : 8
    checkpoint : 3
-   checkpoint_save_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt_1_simulated_checkpoints_more_placing/"
-   load_pretraining : False
-   checkpoint_pretraining : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt_1_simulated_checkpoints_more_placing/model_save-17077.pt"
+   checkpoint_save_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/new_dataloader/"
+   load_pretraining : True
+   checkpoint_pretraining : "/mnt/localstorage/mspremulli/Model_Checkpoints/new_dataloader/model_save-141630.pt"
   
  
