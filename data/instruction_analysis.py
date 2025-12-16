@@ -8,14 +8,14 @@ def plot_and_txt_file(dictionary,filename):
     for key in dictionary.keys():
         file.write("Number of episodes involving " + key + ": " + str(dictionary[key]) + "\n")
     file.close()
-    plt.figure(figsize=(24, 20))
+    plt.figure(figsize=(26, 26))
     plt.xticks(rotation = 90)
     if filename == "task_counter":
         plt.title("Distribution over the skills", fontsize=32)
         plt.xticks(fontsize=32)
     elif filename == "obj_counter":
         plt.title("Distribution over the objects", fontsize=32)
-        plt.xticks(fontsize=13)
+        plt.xticks(fontsize=22)
     else:
         plt.title("Distribution over the skills and objects", fontsize=32)
     plt.yticks(fontsize=26)

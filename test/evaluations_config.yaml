@@ -1,18 +1,16 @@
 ---
-
  evaluations_parameters:
-  data_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta2/"
-  checkpoint_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt_1_simulated_checkpoints_changed_sampler_final_action_space_new_dataset/model_save-6831.pt"
-  number_of_trajectories : 100 # Works only if balanced is set to false
-  interval : 5
-  checkpoint : True
-  changed_action_space : True
-  balanced : False # If false, number_of_trajectories trajectories are sampled at random 
-  number_of_trajectories_for_variation : 10
-  use_predefined_trajectories : False # If true, a predefined set of trajectories is used for the evaluation
+  data_path : "/mnt/localstorage/mspremulli/Datasets/RT-1_Converted_Dataset/" # Path to the data.
+  checkpoint_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt1_checkpoints/rt-1_pretraining_checkpoint_epoch_8_loss_101.1661436528666_batch_32" # Path to the model checkpoint.
+  number_of_trajectories : 8000 # Works only if balanced is set to false or testing on the real RT-1 Dataset.
+  interval : 5 # Accuracy over the specified action token interval.
+  balanced : False # If True, number_of_trajectories_for_variation trajectories are sampled for each task variation. If false, number_of_trajectories trajectories are sampled at random. Works only on MIVIA simulated Dataset.
+  number_of_trajectories_for_variation : 10 # Number of trajectories for task variation. Works only on the MIVIA Simulated Dataset.
+  seed : 42 # Seed for test reproducibility. 
+  original : True # True if working with the original robotic platform and dataset. False, for MIVIA robotic platform and dataset.
+  printing : False # If true, prints evaluation results step by step. False, only final results are printed.
 
- Original : False
-
+# RT-1 Transformer Network Configuration for Original Robotic Platform.
  Transformer_Original : 
   _target_ : evaluations.TransformerNetwork
   use_original_robotic_platform : True
@@ -43,7 +41,8 @@
       gripper_closedness_space_shape : 1
       gripper_closedness_space_low : -1.0
       gripper_closedness_space_high : 1.0
-   
+
+# RT-1 Transformer Network Configuration for MIVIA Robotic Platform.
  Transformer_MIVIA : 
   _target_ : evaluations.TransformerNetwork
   use_original_robotic_platform : False

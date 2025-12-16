@@ -1,10 +1,12 @@
 ---
-
- conversion_parameters: 
-  data_path : "/mnt/localstorage/mspremulli/Datasets/sim_ur5e_pick_place/"
-  save_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta2/"
-  resize : True
-  convert_original : False
-  simulated : True
-  image_height : 200
-  image_width : 200   
+# Parameters used by the conversion.py script
+ conversion_parameters:
+  main_folder_path : "/user/mspremulli/Language-Conditioned-Imitation-Learning/" # Path to the main folder.
+  utility_folder_path : "/user/mspremulli/Multi-Task-LFD-Training-Framework/" # Path to the Multi-Task_LFD-Training-Framework folder.
+  data_path : "/mnt/localstorage/mspremulli/Datasets/RT-1_Dataset/rt-1-data-release/" # Dataset path.
+  save_path : "/mnt/localstorage/mspremulli/Datasets/RT-1_Converted_Dataset/" # Save destination folder.
+  resize : True # If true apply resize using image_height and image_width parameters. Otherwise keep the original resolution.
+  convert_original : True # If True convert the original RT-1 dataset. Otherwise convert the MIVIA Dataset.
+  simulated : True # If True convert the MIVIA simulated Data. Otherwise convert the MIVIA real data.
+  image_height : 200 # Image height resolution for the resize.
+  image_width : 200 # Image width resolution for the resize.

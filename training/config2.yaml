@@ -1,38 +1,5 @@
 ---
-
-Original : False
-
-Transformer_Original : 
-  _target_ : training2.TransformerNetwork
-  use_original_robotic_platform : True
-  train_step_counter : 0
-  vocab_size : 256
-  token_embedding_size : 512
-  num_layers : 1
-  layer_size : 4096
-  num_heads : 8
-  feed_forward_size : 512
-  dropout_rate : 0.1
-  time_sequence_length : 6
-  crop_size : 256
-  use_token_learner : True
-  return_attention_scores : False
-  params_dict :
-      image_channels : 3
-      image_height : 200
-      image_width : 200
-      image_space_low : 0.0
-      image_space_high : 1.0
-      world_vector_space_shape : 3
-      world_vector_space_low : -1.0
-      world_vector_space_high : 1.0
-      rotation_delta_space_shape : 3
-      rotation_delta_space_low : -3.14
-      rotation_delta_space_high : 3.14
-      gripper_closedness_space_shape : 1
-      gripper_closedness_space_low : -1.0
-      gripper_closedness_space_high : 1.0
-   
+# RT-1 Transformer Network Configuration for MIVIA Robotic Platform.
 Transformer_MIVIA : 
   _target_ : training2.TransformerNetwork
   use_original_robotic_platform : False
@@ -74,25 +41,24 @@ Transformer_MIVIA :
       yaw_high : 0.3
       gripper_closedness_space_shape : 2
 
-rt1_dataset:
-    _target_ : training2.CustomDataset
-    data_path : "/mnt/localstorage/mspremulli/RT-1_Converted_Dataset/"
-    time_sequence_length : 6
-  
-
+# RT-1 MIVIA Simulated Dataset Configuration.
 mivia_simulated_dataset:
-    _target_ : training2.CustomDataset3
-    data_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta2/"
-    time_sequence_length : 6
+    _target_ : training2.CustomDataset2
+    data_path : "/mnt/localstorage/mspremulli/Datasets/sim_ur5e_converted/" # Path to the MIVIA simulated dataset.
+    excluded_tasks : ["task_0", "task_5", "task_10", "task_15"] # List of tasks to be excluded from the dataset. The task is specified by its folder name. For examples, task_5 indicates the task 5 (yellow box-second bin).
+    time_sequence_length : 6 # Number of time steps in each trajectory sample.
+    trajectories_set : "" # Path to the json file containing the list of trajectories to be included in the training data. Set to "" to include all the trajectories in the dataset.
     
-
 training:
-   epochs : 500
-   batch_size : 32
-   num_workers : 8
-   checkpoint : 3
-   checkpoint_save_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/new_dataloader/"
-   load_pretraining : True
-   checkpoint_pretraining : "/mnt/localstorage/mspremulli/Model_Checkpoints/new_dataloader/model_save-141630.pt"
-  
+   epochs : 3 # Number of training epochs.
+   batch_size : 32 # Batch size for the training procedure.
+   num_workers : 8 # Number of workers for the data loader.
+   checkpoint : 1 # Save a checkpoint every 'checkpoint' epochs.
+   checkpoint_save_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/prova_no_0_5_10_15/" # Path to save the model checkpoints.
+   checkpoint_pretraining : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt1_checkpoints/rt-1_pretraining_checkpoint_epoch_8_loss_101.1661436528666_batch_32" # Path to the pretrained weights.
+   pretraining : True # Boolean value indicating whether to load pretrained weights or not. If false, model is trained from scratch.
+   project_name : "RT-1 Finetuning Prova 0-5-10-15" # W&B project name for the training procedure.
+   entity : "m-spremulli1-universit-degli-studi-di-salerno" # W&B entity name for the training procedure.
+   weight_bias : True # Boolean value indicating whether to use W&B for experiment tracking.
+
  

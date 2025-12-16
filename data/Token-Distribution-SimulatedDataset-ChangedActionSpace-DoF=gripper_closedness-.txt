@@ -1,2 +1,0 @@
-Token 0 Frequency: 46890
-Token 1 Frequency: 67053

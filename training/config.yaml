@@ -1,7 +1,6 @@
 ---
 
-Original : False
-
+# RT-1 Transformer Network Configuration for Original Robotic Platform.
 Transformer_Original : 
   _target_ : training.TransformerNetwork
   use_original_robotic_platform : True
@@ -32,55 +31,22 @@ Transformer_Original :
       gripper_closedness_space_shape : 1
       gripper_closedness_space_low : -1.0
       gripper_closedness_space_high : 1.0
-   
-Transformer_MIVIA : 
-  _target_ : training.TransformerNetwork
-  use_original_robotic_platform : False
-  train_step_counter : 0
-  vocab_size : 256
-  token_embedding_size : 512
-  num_layers : 1
-  layer_size : 4096
-  num_heads : 8
-  feed_forward_size : 512
-  dropout_rate : 0.1
-  time_sequence_length : 6
-  crop_size : 256
-  use_token_learner : True
-  return_attention_scores : False
-  params_dict :
-      image_channels : 3
-      image_height : 200
-      image_width : 200
-      image_space_low : 0.0
-      image_space_high : 1.0
-      world_vector_space_shape : 3
-      world_vector_space_low : -0.03
-      world_vector_space_high : 0.03
-      rotation_delta_space_shape : 3
-      rotation_delta_space_low : -0.5
-      rotation_delta_space_high : 0.5
-      gripper_closedness_space_shape : 2
 
+# RT-1 Transformer Network Configuration for MIVIA Robotic Platform.
 rt1_dataset:
     _target_ : training.CustomDataset
-    data_path : "/mnt/localstorage/mspremulli/RT-1_Converted_Dataset/"
-    time_sequence_length : 6
-    discard_length : 12
-
-mivia_simulated_dataset:
-    _target_ : training.CustomDataset
-    data_path : "/mnt/localstorage/mspremulli/Datasets/Simulated_Converted_Delta/"
-    time_sequence_length : 6
-    discard_length : 12
+    data_path : "/mnt/localstorage/mspremulli/RT-1_Converted_Dataset/" # Path to the RT-1 converted dataset.
+    time_sequence_length : 6 # Number of time steps in each trajectory sample.
+    discard_length : 12 # If a trajectory has a length smaller than discard_length, then it is not included in the training dataset.
 
 training:
-   epochs : 250
-   batch_size : 32
-   num_workers : 8
-   checkpoint : 5
-   checkpoint_save_path : "/mnt/localstorage/mspremulli/Model_Checkpoints/rt-1_simulated_checkpoints_original_action_space_changed_sampler3/"
-   load_pretraining : False
-   checkpoint_pretraining : ""
+   epochs : 8 # Number of training epochs. For training on the real RT-1 dataset, 16 hours for epoch are required on a single NVIDIA L40s GPU.
+   batch_size : 32 # Batch size for the training procedure.
+   num_workers : 8 # Number of workers for the data loader.
+   checkpoint : 1 # Save a checkpoint every 'checkpoint' epochs.
+   checkpoint_save_path : "" # Path to save the model checkpoints.
+   project_name : "RT-1 Pre-Training" # W&B project name for the training procedure.
+   entity : "m-spremulli1-universit-degli-studi-di-salerno" # W&B entity name for the training procedure.
+   weight_bias : True # Boolean value indicating whether to use W&B for experiment tracking.
   
  
